@@ -17,7 +17,7 @@ PC studies:
 - outputs/nurbis-dungeons/src — game, renderer, materials, puzzle definitions and rules
 - outputs/nurbis-dungeons — playable web bundles and retained studies
 - outputs/nurbi-android — Android project, offline web assets and touch-control study
-- outputs/*.apk — signed Android test deliverables (latest published APK: 0.1.3; later PC design studies have not yet been packaged into it)
+- outputs/*.apk — signed Android test deliverables (latest published APK: 0.2.0; 60 rooms and selectable button material skins)
 - work — development helpers, puzzle generation data, tests and historical build scripts
 - scripts — portable web build and version backup
 
@@ -29,6 +29,8 @@ Every completed version or change is committed and pushed with a unique snapshot
 
 The original APK is signed with the local Android debug key. That private key is not stored here. Future APK updates need the same key to retain install compatibility.
 
-Latest catalogue extension: outputs/nurbis-dungeons/KATALOG-ERWEITERUNG-30.md (rooms 25–30). APK 0.1.3 remains the previous 24-room build.
+Latest catalogue extension: outputs/nurbis-dungeons/KATALOG-ERWEITERUNG-30.md (rooms 25–30). APK 0.2.0 now includes the current 60-room learning path.
 
-Current learning-path edition: 60 rooms in six chapters (16 easy, 20 medium, 24 challenging). All previous rooms are reordered by stable ID with saved progress retained. Details and old/new room numbers: outputs/nurbis-dungeons/LERNPFAD-60.md. PC playtesting first; APK 0.1.3 still contains 24 rooms.
+Current learning-path edition: 60 rooms in six chapters (16 easy, 20 medium, 24 challenging). All previous rooms are reordered by stable ID with saved progress retained. Details and old/new room numbers: outputs/nurbis-dungeons/LERNPFAD-60.md. APK 0.2.0 includes these rooms with stone, wood and stone/ivory buttons selectable in settings.
+
+Android 0.2.0 installation and checks: outputs/ANDROID-TEST-0.2.0.md. Install over the existing test app to preserve its progress.

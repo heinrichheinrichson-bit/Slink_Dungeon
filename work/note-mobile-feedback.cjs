@@ -1,0 +1,1 @@
+const fs=require('fs'),p='outputs/ANDROID-TEST-0.2.0.md';let s=fs.readFileSync(p,'utf8').replace('Neustart und Raumwechsel liegen im Menü.','Neustart und Raumwechsel liegen im Menü. Unter „Tester · Wie war der Raum?“ kannst du außerdem Zu leicht / Passend / Zu schwer / Unklar lokal festhalten.');fs.writeFileSync(p,s);

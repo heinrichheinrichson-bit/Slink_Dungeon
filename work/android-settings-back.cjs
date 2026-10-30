@@ -1,0 +1,1 @@
+const fs=require('fs'),p='outputs/nurbi-android/app/src/main/java/com/nurbi/dungeons/test/MainActivity.java';let s=fs.readFileSync(p,'utf8').replace("(function(){var b=document.getElementById('home');", "(function(){var menu=document.getElementById('phone-menu');if(menu&&menu.open){menu.close();return true;}var b=document.getElementById('home');");fs.writeFileSync(p,s);

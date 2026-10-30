@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
   web.setWebChromeClient(new WebChromeClient());web.loadUrl("https://"+HOST+"/spielrunde.html");
  }
  private WebResourceResponse missing(){return new WebResourceResponse("text/plain","UTF-8",404,"Not Found",Collections.emptyMap(),new ByteArrayInputStream(new byte[0]));}
- @Override public void onBackPressed(){web.evaluateJavascript("(function(){var b=document.getElementById('home');if(b&&!b.hidden){b.click();return true;}return false;})()",value->{if(!"true".equals(value))finish();});}
+ @Override public void onBackPressed(){web.evaluateJavascript("(function(){var menu=document.getElementById('phone-menu');if(menu&&menu.open){menu.close();return true;}var b=document.getElementById('home');if(b&&!b.hidden){b.click();return true;}return false;})()",value->{if(!"true".equals(value))finish();});}
  @Override protected void onPause(){super.onPause();web.onPause();}
  @Override protected void onResume(){super.onResume();if(web!=null)web.onResume();}
  @Override protected void onDestroy(){web.destroy();super.onDestroy();}

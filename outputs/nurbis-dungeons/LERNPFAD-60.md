@@ -47,7 +47,7 @@ Alle Räume bleiben offen. Bei einem schwierigen Raum kann jederzeit ein anderer
 - 60 unter Drehung und Spiegelung unterschiedliche Grundrisse, eindeutige IDs, Abschnitts- und Schwierigkeitsfilter geprüft.
 - Browser: erster Raum, Wippen-Einstieg und Wasser-Einstieg vollständig gelöst; Rückgängig, Filter und lokales Feedback geprüft.
 
-Die aktuelle APK 0.1.3 bleibt auf dem bisherigen 24-Räume-Stand. Diese Katalogfassung wird zuerst am PC beurteilt. Die PC-Steuerungs- und Materialstudien bleiben erhalten und zeigen ihren bisherigen Vergleichsraum Verzahnte Wege. Die Regel, unterschiedliche Bodenmechaniken später klar in Form und Struktur zu unterscheiden, bleibt bestehen; die Grafiken sind noch Studienstand.
+Seit APK 0.2.0 ist dieser 60-Räume-Lernpfad auch auf Android enthalten; die erste Katalogprüfung fand am PC statt. Die PC-Steuerungs- und Materialstudien bleiben erhalten und zeigen ihren bisherigen Vergleichsraum Verzahnte Wege. Die Regel, unterschiedliche Bodenmechaniken später klar in Form und Struktur zu unterscheiden, bleibt bestehen; die Grafiken sind noch Studienstand.
 
 ## Inspiration, keine übernommenen Rätsel
 
