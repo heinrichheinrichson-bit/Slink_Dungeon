@@ -8,7 +8,7 @@ export const solutionStates=rooms.map((room,i)=>{
  return states;
 });
 export function createRound(saved){
- let index=0,slots=rooms.map(r=>({state:r.initial(),history:[],solved:false}));
+ const redoStacks=new WeakMap();let index=0,slots=rooms.map(r=>({state:r.initial(),history:[],solved:false}));
  if(saved?.version===1&&Array.isArray(saved.ids)&&Array.isArray(saved.slots)&&saved.ids.length===saved.slots.length){
   // Keep stable room identities when the collection grows or is reordered.
   rooms.forEach((room,i)=>{const old=saved.ids.indexOf(room.id),slot=saved.slots[old];
@@ -20,8 +20,10 @@ export function createRound(saved){
   get index(){return index;},get slots(){return slots;},get slot(){return slots[index];},get room(){return rooms[index];},
   get completed(){return slots.filter(s=>s.solved).length;},
   select(i){if(Number.isInteger(i)&&i>=0&&i<rooms.length)index=i;},
-  act(d){const slot=slots[index],result=rooms[index].act(slot.state,d);if(result.state){slot.history.push(slot.state);slot.state=result.state;slot.solved ||= slot.state.won;}return result;},
-  undo(){const slot=slots[index];if(!slot.history.length)return false;slot.state=slot.history.pop();return true;},
+  act(d){const slot=slots[index],result=rooms[index].act(slot.state,d);if(result.state){redoStacks.delete(slot);slot.history.push(slot.state);slot.state=result.state;slot.solved ||= slot.state.won;}return result;},
+  undo(){const slot=slots[index];if(!slot.history.length)return false;const stack=redoStacks.get(slot)||[];stack.push(slot.state);redoStacks.set(slot,stack);slot.state=slot.history.pop();return true;},
+  get canRedo(){return !!redoStacks.get(slots[index])?.length;},
+  redo(){const slot=slots[index],stack=redoStacks.get(slot);if(!stack?.length)return false;slot.history.push(slot.state);slot.state=stack.pop();return true;},
   reset(){slots[index]={state:rooms[index].initial(),history:[],solved:slots[index].solved};},
   next(){if(!slots[index].state.won||index===rooms.length-1)return false;index++;return true;},
   guidePosition(){const state=slots[index].state,at=state.moves;return solutionStates[index][at]&&signature(solutionStates[index][at])===signature(state)?at:-1;},

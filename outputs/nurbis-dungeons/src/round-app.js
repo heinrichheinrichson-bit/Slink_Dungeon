@@ -25,7 +25,7 @@ function renderOverview(){
  document.querySelectorAll('#room-cards button').forEach((b,i)=>{const slot=round.slots[i];b.hidden=!indices.includes(i);b.querySelector('.card-state').textContent=slot.solved?'Gerettet ✓':slot.state.moves?`${slot.state.moves} Schritte · fortsetzen`:'Noch nicht begonnen';});
 }
 function select(i){round.select(i);screen='play';busy=0;clearTimeout(winTimer);$('overview').hidden=true;$('play').hidden=false;$('home').hidden=false;$('guide').open=false;message=introductions[i];draw();save();window.scrollTo({top:0,behavior:'auto'});}
-function draw(){
+function draw(){document.body.dataset.canRedo=String(round.canRedo);
  const room=round.room,s=round.slot.state,i=round.index;
  $('overall-progress').textContent=`${round.completed} / ${rooms.length} Freunde gerettet`;
  $('room-select').value=String(i);$('room-label').textContent=`ABSCHNITT ${room.level.chapter} · RAUM ${i+1} / ${rooms.length}`;
@@ -72,3 +72,5 @@ board.addEventListener('pointerdown',e=>{if(e.isPrimary===false||screen!=='play'
 board.addEventListener('pointerup',e=>{if(!pointer||e.pointerId!==pointer.id)return;const dx=e.clientX-pointer.x,dy=e.clientY-pointer.y;pointer=null;if(Math.max(Math.abs(dx),Math.abs(dy))>15){run(Math.abs(dx)>Math.abs(dy)?[Math.sign(dx),0]:[0,Math.sign(dy)]);return;}const p=window.pickDungeonCell?.(e.clientX,e.clientY);if(!p)return;const s=round.slot.state,d=[p[0]-s.p[0],p[1]-s.p[1]];if(Math.abs(d[0])+Math.abs(d[1])===1)run(d);else{message='Wische in eine Richtung oder tippe ein Nachbarfeld an.';draw();}});
 board.addEventListener('pointercancel',()=>pointer=null);
 window.addEventListener('dungeon-ready',()=>{if(screen==='play')draw();});overview();
+
+document.addEventListener('nurbi-redo',()=>{if(round.redo()){busy=0;message='Zurückgenommenen Zug wiederholt.';draw();}});

@@ -38,3 +38,5 @@ Android 0.2.0 installation and checks: outputs/ANDROID-TEST-0.2.0.md. Install ov
 Android 0.2.1: outputs/ANDROID-TEST-0.2.1.md. Adds saved control size and edge-distance sliders, mirrored for left/right use.
 
 PC control placement comparison: /steuerungsanordnung-studie.html (side versus centered controls, playable undo/redo, top hint, all three materials). Rebuild with node scripts/build-control-layout-study.cjs. Study uses isolated QA state and leaves APK/game saves unchanged.
+
+Android 0.2.2: outputs/ANDROID-TEST-0.2.2.md. Five saved control arrangements, centered undo/redo, compact raised/lowered action buttons and top hint. Latest APK: outputs/Nurbi-Dungeons-Test-0.2.2.apk.
