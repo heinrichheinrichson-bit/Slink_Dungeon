@@ -1,0 +1,11 @@
+const centered=new URLSearchParams(location.search).get('layout')==='center';
+window.addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==parent||e.data?.type!=='layout')return;document.body.dataset.material=e.data.material||'stone';if(centered)document.body.dataset.side='center';});
+if(centered){
+ document.body.dataset.side='center';
+ const actions=document.getElementById('opposite-actions'),undo=document.getElementById('study-undo'),hint=document.getElementById('study-hint');
+ const redo=undo.cloneNode(true);redo.id='study-redo';redo.setAttribute('aria-label','Zurückgenommenen Zug wiederholen');redo.querySelector('small').textContent='Wiederholen';redo.querySelector('svg').style.transform='scaleX(-1)';redo.onclick=()=>document.dispatchEvent(new Event('study-redo'));redo.disabled=true;
+ hint.id='top-hint';document.getElementById('phone-tools').before(hint);actions.replaceWith(undo);document.getElementById('control-zone').append(redo);
+ const sync=()=>redo.disabled=document.body.dataset.canRedo!=='true';new MutationObserver(sync).observe(document.body,{attributes:true,attributeFilter:['data-can-redo']});sync();
+ const style=document.createElement('style');style.textContent=`body[data-side=center] #control-zone{display:grid;grid-template-columns:1fr var(--pad) 1fr;gap:5px;align-items:center;padding:7px}body[data-side=center] #control-zone .directions{grid-column:2;grid-row:1}#control-zone #study-undo{grid-column:1;grid-row:1;justify-self:center}#control-zone #study-redo{grid-column:3;grid-row:1;justify-self:center;width:72px;height:77px;border-radius:24px}#control-zone #study-undo{width:72px}#top-hint{position:relative;isolation:isolate;border:0;background:none;color:var(--mat-ink);width:46px;height:46px;border-radius:16px;padding:5px}#top-hint small{display:none}#top-hint .material-content svg{width:24px;height:24px}#top-hint .material-content{gap:0}#study-redo:disabled{opacity:.4}`;document.head.append(style);
+}
+const actionStyle=document.createElement('style');actionStyle.textContent='#control-zone>#study-undo,#control-zone>#study-redo{position:relative;isolation:isolate;border:0;background:none;color:var(--mat-ink);font:inherit;padding:5px}#control-zone>#study-undo .material-content,#control-zone>#study-redo .material-content{font-size:11px}';document.head.append(actionStyle);
