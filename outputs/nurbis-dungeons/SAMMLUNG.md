@@ -1,3 +1,5 @@
+> Aktueller Lernpfad: **60 Räume in sechs Abschnitten**. Siehe [LERNPFAD-60.md](LERNPFAD-60.md) für die Reihenfolge und die Übernahme alter Spielstände. Frühere Dokumentation folgt unten.
+
 > Aktueller Stand: **30 Räume**. Details zur Erweiterung auf 30: [KATALOG-ERWEITERUNG-30.md](KATALOG-ERWEITERUNG-30.md). Der folgende Text beschreibt den ursprünglichen 24-Räume-Stand.
 
 # Rätselsammlung · 24 Räume

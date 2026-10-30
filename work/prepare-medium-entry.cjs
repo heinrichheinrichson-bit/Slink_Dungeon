@@ -1,0 +1,1 @@
+const fs=require('fs');let s=fs.readFileSync('work/design-lernpfad-medium.cjs','utf8').replace('seed=3010639','seed=3013001').replaceAll('accepted.length>=10','accepted.length>=1').replaceAll('accepted.length<10','accepted.length<1').replaceAll('lernpfad-medium-pool','lernpfad-medium-entry-pool');fs.writeFileSync('work/design-lernpfad-medium-entry.cjs',s);

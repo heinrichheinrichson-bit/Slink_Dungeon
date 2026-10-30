@@ -26,7 +26,7 @@ export function createSwitchRescueRules(level,start){
   if(d[1]!==0||d[0]!==(s.off?-1:1))return {reason:'Die Wippe ist nur vom abgesenkten Ende betretbar. Die Seitenfassung bleibt geschlossen.'};
   const n=structuredClone(s);n.rockerEntry=d[0];n.p=p;n.moves++;return {state:n,reason:'Nurbi steht auf dem tiefen Ende. Weitergehen kippt die Wippe; zurückgehen schaltet nichts.'};
  }
- if(blocked(s,p))return {reason:['G','E'].includes(c)?'Dieser Durchgang wird von der Wippe bedient.':c==='D'?'Alle vier Druckplatten müssen den Ausgang offenhalten.':'Hier ist eine Wand.'};
+ if(blocked(s,p))return {reason:['G','E'].includes(c)?'Dieser Durchgang wird von der Wippe bedient.':c==='D'?'Alle Druckplatten müssen den Ausgang offenhalten.':'Hier ist eine Wand.'};
  if(c==='O'){
  if(!s.rescued||!ready(s))return {reason:'Hole den Freund dazu und belege alle Druckplatten.'};
  const friendPath=path(s,level.friend,p),nurbiPath=path(s,s.p,p);if(!friendPath||!nurbiPath)return {reason:'Der gemeinsame Rückweg ist noch versperrt. Die Wippe kann auf dem Fluchtweg nicht einfach übergangen werden.'};

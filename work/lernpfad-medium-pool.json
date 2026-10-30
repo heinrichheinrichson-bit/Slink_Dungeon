@@ -1,0 +1,392 @@
+[
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##......###",
+      "##...S.S###",
+      "###..#.####",
+      "##......###",
+      "###...S####",
+      "##..#...###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        3,
+        7
+      ],
+      "boxes": [
+        [
+          3,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          3,
+          6
+        ]
+      ]
+    },
+    "solution": "URUUUULLDRRURRDULLDRRDDLDLLUURUULLDRR",
+    "pushes": 12,
+    "lowerBound": 6,
+    "states": 508,
+    "goalVacateRequired": false
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##...SS.###",
+      "#####...###",
+      "##S.....###",
+      "##..#...###",
+      "##...#.####",
+      "###..#..###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        2,
+        2
+      ],
+      "boxes": [
+        [
+          6,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    "solution": "RRRDDDRURULDLUDLLLDDRULURRRURRDLLLL",
+    "pushes": 14,
+    "lowerBound": 6,
+    "states": 306,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##S.#...###",
+      "##..S.#####",
+      "##.#.S..###",
+      "##......###",
+      "##..#..####",
+      "###.#..####",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        5,
+        2
+      ],
+      "boxes": [
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    "solution": "DDDLURRRDLULLDLDLUUURRRDRDLRDDLUURULULLLDDRRURRDDLU",
+    "pushes": 16,
+    "lowerBound": 8,
+    "states": 200,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##....#.###",
+      "###.....###",
+      "###.#..S###",
+      "####....###",
+      "###.S..S###",
+      "####.######",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        5,
+        2
+      ],
+      "boxes": [
+        [
+          6,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ]
+    },
+    "solution": "DDRDDLLURUUULLDRURDDRRULLULLDRURDRRDDDLUDLLURDRRUUULLDDUURRDDDLLURLUURRDDLLUR",
+    "pushes": 18,
+    "lowerBound": 10,
+    "states": 445,
+    "goalVacateRequired": false
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##..##.S###",
+      "##....#.###",
+      "##..#...###",
+      "##..S.#.###",
+      "###....S###",
+      "####....###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        4,
+        7
+      ],
+      "boxes": [
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          3
+        ]
+      ]
+    },
+    "solution": "ULURLLUURDLDRDRRRRUULLDURRDDDLLLULURDRRDRUUULLDLDRRLUURRUDLLULRDDLLULUURDDLDR",
+    "pushes": 20,
+    "lowerBound": 8,
+    "states": 415,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "###...S####",
+      "##.#....###",
+      "##......###",
+      "####..#S###",
+      "##....#.###",
+      "##S...#####",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        4,
+        5
+      ],
+      "boxes": [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          6
+        ]
+      ]
+    },
+    "solution": "URDDDLUDLLURRDRUUULDURRUULLDURRDDLULURDDDLDURUULDDRDDLLURDRUULURRURD",
+    "pushes": 22,
+    "lowerBound": 10,
+    "states": 1240,
+    "goalVacateRequired": false
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "####.SSS###",
+      "####..#.###",
+      "##....#.###",
+      "##..#.#####",
+      "##......###",
+      "##......###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        5,
+        2
+      ],
+      "boxes": [
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          4,
+          3
+        ]
+      ]
+    },
+    "solution": "DDLLDDRRDRRULLLDLLUUURRRDULLDLDDRRURDLLURRUUUULDRDDDDRRULDLUUUULURRLDDDDLLLUURRLLDDRULURDDRRUUUDDDLLUURLDDRRUULUURLDDRU",
+    "pushes": 25,
+    "lowerBound": 9,
+    "states": 373,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "###S...S###",
+      "##.##...###",
+      "##.#....###",
+      "##...#..###",
+      "##......###",
+      "##....S.###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        5,
+        7
+      ],
+      "boxes": [
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          6
+        ]
+      ]
+    },
+    "solution": "LULLDRRRURUULLDURRDDLDLLURUURRRDDDLUUULLDDLLURDRRRUULLDLDRUURRDDDRUULULLDDRLUURRDRDDLUUUURULLLRDDLDDDRURURUU",
+    "pushes": 26,
+    "lowerBound": 12,
+    "states": 897,
+    "goalVacateRequired": false
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##....#S###",
+      "##...#.S###",
+      "##......###",
+      "##.##.S.###",
+      "##..#...###",
+      "##..#.#####",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        4,
+        2
+      ],
+      "boxes": [
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    "solution": "DULLDDRRRRDRUUDDDLLURULLUULLDDRRRDRRUULDLLLLURURDLDRRRLDDRRUU",
+    "pushes": 19,
+    "lowerBound": 9,
+    "states": 289,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##.S....###",
+      "##..#...###",
+      "##......###",
+      "####.#..###",
+      "##..#...###",
+      "##.S.S..###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        3,
+        2
+      ],
+      "boxes": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ]
+    },
+    "solution": "DLDRRRLLUURRDRDDDRDLLLRURUUULULLDDRRURDDDRDLUUUURULLL",
+    "pushes": 21,
+    "lowerBound": 9,
+    "states": 468,
+    "goalVacateRequired": true
+  }
+]

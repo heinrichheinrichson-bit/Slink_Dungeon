@@ -1,0 +1,346 @@
+[
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##.S..#.S##",
+      "####.S##.##",
+      "##.......##",
+      "###......##",
+      "##..##S..##",
+      "###.#....##",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        8,
+        2
+      ],
+      "boxes": [
+        [
+          5,
+          5
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    "solution": "DDLLRDDLULULLDRRURDULLUURDLDDRRULDLUURULRDDRDRDRUULLDLURRRU",
+    "pushes": 22,
+    "lowerBound": 10,
+    "states": 5073,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##.#....S##",
+      "##.#.....##",
+      "##....S.###",
+      "##....#S###",
+      "##..#..S.##",
+      "##....#..##",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        4,
+        5
+      ],
+      "boxes": [
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          6
+        ]
+      ]
+    },
+    "solution": "LLDDRRRUUUULURRRDDLLDLUDLLURRRRURDDUUULLLDRDDLLURRRURDLLDDDLLUULURRR",
+    "pushes": 24,
+    "lowerBound": 16,
+    "states": 5120,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "###......##",
+      "##.#.#..S##",
+      "##..##...##",
+      "##.#....###",
+      "##S.....S##",
+      "##...#.S.##",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        8,
+        4
+      ],
+      "boxes": [
+        [
+          7,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ]
+    },
+    "solution": "LDLURDDDLULLDLLURRRRRUULDURUULDRDDDLLLURRDRUURUULLDDRDDLLURURDDUULURDDDLLLL",
+    "pushes": 26,
+    "lowerBound": 10,
+    "states": 3732,
+    "goalVacateRequired": false
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##...#..S##",
+      "###......##",
+      "##.......##",
+      "##.....#.##",
+      "##.S.######",
+      "##...S..S##",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        8,
+        7
+      ],
+      "boxes": [
+        [
+          5,
+          3
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          6,
+          4
+        ]
+      ]
+    },
+    "solution": "LLLLUUUURRURRDLLLDLLUURDDDLDLDRRRRRLLLLUURDLDRUURRULURURRDDLLULDRDLLULDURRRRULUR",
+    "pushes": 29,
+    "lowerBound": 13,
+    "states": 8900,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##.S.S.#.##",
+      "##..#....##",
+      "##...##.###",
+      "##.......##",
+      "###S.#...##",
+      "##...#..S##",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        2,
+        5
+      ],
+      "boxes": [
+        [
+          3,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          7,
+          4
+        ]
+      ]
+    },
+    "solution": "RURDRRDRRULLLLULLDRRRLULLUURRRRDRDDUULULLLLDDRRDRRDRLULLULLUURRRRDRDDLLLLDDRULUULUURRRRDRDDLLLULULURRLDDRDDLUUUDRDRRRRDULLDDRURULLLLULD",
+    "pushes": 30,
+    "lowerBound": 10,
+    "states": 3331,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##..#.S..##",
+      "##..#.#..##",
+      "##.##.#.###",
+      "##....#S.##",
+      "##.......##",
+      "##S...S.###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        7,
+        2
+      ],
+      "boxes": [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          7,
+          3
+        ]
+      ]
+    },
+    "solution": "LLDDDUUURRDDDRDLDLLLUURDLDRLLULURDRRUUUURRDDDDLLDLLUURLDDRRURRDLULLRRRUUUULLDDDLDRRDRUUUURULDDDDLLULLLDRRRRDRULLLDR",
+    "pushes": 32,
+    "lowerBound": 8,
+    "states": 6078,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "###......##",
+      "##...#S.S##",
+      "##....#S.##",
+      "##.#..#..##",
+      "##..S....##",
+      "##.#.#..###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        5,
+        4
+      ],
+      "boxes": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    "solution": "LUURRRDDDDLLLUURDLDRRDRUUURUULLDRURDULLLLDDRDDLLLUUURLDDDRRRUULDRDRRUUUULLLDDULLDDDRRRUULDUULLDRURDRDDRDRUUUDDLLUULLLDDRRRRDRUUDLLUULDUUURRRRDLULLLDDRDDRRURU",
+    "pushes": 34,
+    "lowerBound": 12,
+    "states": 1821,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "###......##",
+      "##.......##",
+      "###.#....##",
+      "##...##.###",
+      "##..S.S..##",
+      "###..SS.###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        5,
+        4
+      ],
+      "boxes": [
+        [
+          5,
+          3
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          3,
+          6
+        ]
+      ]
+    },
+    "solution": "RULULLDDDRDRRDRULLLULUUURRRRRDDLUULLLLDDDRDRRRUURUULLDLLULDURRRRRDLLLRRDDDLLLULLDRDRRURRUUUULLLLDDDUUURRDDRUULLLDDDRDULLDRRRLULUUURRDLULDDDRDRDRRUUULULLLDDLDRUUUURRRRRDLLLULLDDDDDRRLLUURDLDRUULUUURRDLULDDDLDR",
+    "pushes": 37,
+    "lowerBound": 9,
+    "states": 4034,
+    "goalVacateRequired": true
+  }
+]

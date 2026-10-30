@@ -30,7 +30,7 @@ export function createWaterRescueRules(level,start){
   const n=structuredClone(s);n.rockerEntry=d[0];n.p=p;n.moves++;return {state:n,reason:'Nurbi steht auf dem tiefen Ende. Weitergehen kippt die Wippe; zurückgehen schaltet nichts.'};
  }
  if(!edge(s.p,p))return {reason:'Der Beckenrand ist geschlossen. Benutze die Treppen an den beiden Enden.'};
- if(blocked(s,p))return {reason:wet(s,p)?'Das Becken ist geflutet. Lege es mit der Wippe trocken.':c==='G'?'Alle vier Druckplatten müssen den Ausgang offenhalten.':'Hier ist eine Wand.'};
+ if(blocked(s,p))return {reason:wet(s,p)?'Das Becken ist geflutet. Lege es mit der Wippe trocken.':c==='G'?'Alle Druckplatten müssen den Ausgang offenhalten.':'Hier ist eine Wand.'};
  if(c==='O'){
  if(!s.rescued||!ready(s))return {reason:'Hole den Freund dazu und belege alle Druckplatten.'};
  const friendPath=path(s,level.friend,p),nurbiPath=path(s,s.p,p);if(!friendPath||!nurbiPath)return {reason:'Der gemeinsame Rückweg ist noch versperrt. Beide brauchen ein trockenes Becken oder einen Weg über festen Boden.'};

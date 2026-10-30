@@ -1,18 +1,24 @@
 import {difficulties,difficultyOf,filterRooms,nextFilteredRoom} from './collection-catalog.js';
-import {rooms,solutions,introductions} from './round-data.js';
+import {rooms,solutions,introductions,chapters} from './round-data.js';
 import {createRound,directions} from './round-state.js';
 const $=id=>document.getElementById(id),qa=new URLSearchParams(location.search).has('qa'),storage='nurbi-spielrunde-v1';
 let saved=null;try{if(!qa)saved=JSON.parse(localStorage.getItem(storage));}catch{}
-const round=createRound(saved);let difficulty='all',onlyOpen=false;
-const eligible=()=>filterRooms(rooms,round.slots,difficulty,onlyOpen);
+const round=createRound(saved);let difficulty='all',onlyOpen=false,chapter='all';
+const eligible=()=>filterRooms(rooms,round.slots,difficulty,onlyOpen,chapter);
 let screen='overview',busy=0,winTimer,message='';
+let feedback={};try{if(!qa)feedback=JSON.parse(localStorage.getItem('nurbi-puzzle-feedback-v1'))||{};}catch{}
+function renderFeedback(){if(!$('feedback-result'))return;const choice=feedback[round.room.id];document.querySelectorAll('[data-feedback]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.feedback===choice)));$('feedback-result').textContent=choice?'Deine Einschätzung: '+choice+' · nur auf diesem Gerät gespeichert.':'Deine Einschätzung hilft uns, die Lernkurve zu prüfen.';}
+document.querySelectorAll('[data-feedback]').forEach(b=>b.onclick=()=>{feedback[round.room.id]=b.dataset.feedback;if(!qa)try{localStorage.setItem('nurbi-puzzle-feedback-v1',JSON.stringify(feedback));}catch{}renderFeedback();});
 function save(){if(qa)return;try{localStorage.setItem(storage,JSON.stringify(round.export()));}catch{}}
 function overview(){screen='overview';clearTimeout(winTimer);$('overview').hidden=false;$('play').hidden=true;$('home').hidden=true;renderOverview();save();window.scrollTo({top:0,behavior:'auto'});}
 function renderOverview(){
- const indices=eligible();$('continue').disabled=!indices.length;
+ const indices=eligible();
+ if($('chapter-description'))$('chapter-description').textContent=chapter==='all'?'Sechs Abschnitte mit kleinen Lernschritten. Alle Räume bleiben frei wählbar; du kannst jederzeit wechseln.':chapters[Number(chapter)-1].desc;
+ document.querySelectorAll('.chapter-divider').forEach(el=>{const id=Number(el.dataset.chapter),ids=indices.filter(i=>rooms[i].level.chapter===id);el.hidden=!ids.length;el.querySelector('small').textContent=round.slots.filter((s,i)=>s.solved&&rooms[i].level.chapter===id).length+' / 10 gerettet';});$('continue').disabled=!indices.length;
  $('filter-result').textContent=`${indices.length} von ${rooms.length} Rätseln · ${Object.keys(difficulties).map(d=>filterRooms(rooms,round.slots,d).length+' '+d).join(' · ')}`;
  $('empty').hidden=indices.length>0;
- document.querySelectorAll('[data-difficulty]').forEach(b=>{const key=b.dataset.difficulty;b.setAttribute('aria-pressed',String(key===difficulty));const n=filterRooms(rooms,round.slots,key,onlyOpen).length;b.textContent=(key==='all'?'Alle':difficulties[key])+' · '+n;});
+ $('empty').textContent=onlyOpen&&filterRooms(rooms,round.slots,difficulty,false,chapter).length?'Alle Räume dieser Auswahl sind bereits gelöst. Entferne „Nur offene“, um sie erneut zu spielen.':'Keine Räume in dieser Auswahl. Ändere Abschnitt oder Schwierigkeit.';
+ document.querySelectorAll('[data-difficulty]').forEach(b=>{const key=b.dataset.difficulty;b.setAttribute('aria-pressed',String(key===difficulty));const n=filterRooms(rooms,round.slots,key,onlyOpen,chapter).length;b.textContent=(key==='all'?'Alle':difficulties[key])+' · '+n;});
  $('overall-progress').textContent=`${round.completed} / ${rooms.length} Freunde gerettet`;
  $('overview-text').textContent=round.completed===rooms.length?`Alle ${rooms.length} Freunde sind wieder draußen. Du kannst jeden Raum erneut besuchen und andere Lösungen ausprobieren.`:`Unter den Gärten haben sich ${rooms.length} Freunde verirrt. Öffne ihre Wege nach draußen – mit Köpfchen und ohne Zeitdruck.`;
  $('continue').textContent=round.completed===rooms.length?'Räume erneut besuchen':round.slots.some(s=>s.state.moves)?'Spielrunde fortsetzen':'Spielrunde beginnen';
@@ -22,8 +28,9 @@ function select(i){round.select(i);screen='play';busy=0;clearTimeout(winTimer);$
 function draw(){
  const room=round.room,s=round.slot.state,i=round.index;
  $('overall-progress').textContent=`${round.completed} / ${rooms.length} Freunde gerettet`;
- $('room-select').value=String(i);$('room-label').textContent=`RAUM ${i+1} / ${rooms.length}`;
- $('title').textContent=room.level.title;$('description').textContent=introductions[i];$('hint').textContent=room.level.hint;$('tags').textContent=room.level.tags.join(' · ');
+ $('room-select').value=String(i);$('room-label').textContent=`ABSCHNITT ${room.level.chapter} · RAUM ${i+1} / ${rooms.length}`;
+ $('title').textContent=room.level.title;$('description').textContent=introductions[i];$('hint').textContent=room.level.hint;$('tags').textContent=['Abschnitt '+room.level.chapter,room.level.phase,...room.level.tags].join(' · ');
+ renderFeedback();
  let count=0,total=0;room.level.map.forEach((row,y)=>[...row].forEach((c,x)=>{if(c==='S'){total++;if(s.boxes.some(p=>p[0]===x&&p[1]===y))count++;}}));
  $('objective').textContent=`Druckplatten ${count}/${total} · ${s.rescued?'Freund gefunden':'Freund finden'}`;
  $('moves').textContent=`${s.moves} Schritte`;$('status').textContent=message;$('undo').disabled=!round.slot.history.length;
@@ -41,9 +48,12 @@ function draw(){
  save();
 }
 function run(d){if(screen!=='play'||performance.now()<busy)return;const result=round.act(d);message=result.reason;if(result.state)busy=performance.now()+(result.state.won?(result.state.escapeDuration||1)*1000:190);else window.dungeonBump?.(...d);draw();}
+chapters.forEach(c=>{if(!$('chapter-select'))return;const option=document.createElement('option');option.value=String(c.id);option.textContent=c.id+' · '+c.title;$('chapter-select').append(option);});
+if($('chapter-select'))$('chapter-select').onchange=e=>{chapter=e.target.value;renderOverview();};
 rooms.forEach((room,i)=>{
- const b=document.createElement('button');b.className='room-card';const number=document.createElement('span');number.className='card-number';number.textContent=String(i+1).padStart(2,'0');const title=document.createElement('strong');title.textContent=room.level.title;const text=document.createElement('span');text.textContent=introductions[i];const state=document.createElement('small');state.className='card-state';const badge=document.createElement('small');badge.className='difficulty-badge';badge.textContent=difficulties[difficultyOf(room)];b.append(number,title,badge,text,state);b.onclick=()=>select(i);$('room-cards').append(b);
- const option=document.createElement('option');option.value=String(i);option.textContent=`${i+1} · ${room.level.title}`;$('room-select').append(option);
+ if(i%10===0){const div=document.createElement('div');div.className='chapter-divider';div.dataset.chapter=String(room.level.chapter);const h=document.createElement('h2');h.textContent=room.level.chapter+' · '+room.level.chapterTitle;const text=document.createElement('p');text.textContent=chapters[room.level.chapter-1].desc;const count=document.createElement('small');div.append(h,text,count);$('room-cards').append(div);}
+ const b=document.createElement('button');b.className='room-card';const number=document.createElement('span');number.className='card-number';number.textContent=String(i+1).padStart(2,'0');const title=document.createElement('strong');title.textContent=room.level.title;const text=document.createElement('span');text.textContent=introductions[i];const state=document.createElement('small');state.className='card-state';const badge=document.createElement('small');badge.className='difficulty-badge';badge.textContent=difficulties[difficultyOf(room)]+' · '+room.level.phase;b.append(number,title,badge,text,state);b.onclick=()=>select(i);$('room-cards').append(b);
+ const option=document.createElement('option');option.dataset.room=room.id;option.value=String(i);option.textContent=`${i+1} · ${room.level.title}`;$('room-select').append(option);
 });
 document.querySelectorAll('[data-difficulty]').forEach(b=>b.onclick=()=>{difficulty=b.dataset.difficulty;renderOverview();});
 $('only-open').onchange=e=>{onlyOpen=e.target.checked;renderOverview();};

@@ -1,0 +1,1 @@
+const fs=require('fs'),p='work/prepare-install-lernpfad.cjs';let s=fs.readFileSync(p,'utf8').replace('d=ds[i],goal=',"d=pool==='medium'&&i===0?JSON.parse(fs.readFileSync('work/lernpfad-medium-entry-pool.json'))[0]:ds[i],goal=");fs.writeFileSync(p,s);

@@ -1,0 +1,485 @@
+{
+  "total": 5914,
+  "rooms": [
+    {
+      "id": "lernpfad-easy0",
+      "title": "Ein freier Weg",
+      "chapter": 1,
+      "moves": 12,
+      "pushes": 4,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-easy1",
+      "title": "Zwei kleine Aufgaben",
+      "chapter": 1,
+      "moves": 17,
+      "pushes": 5,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-easy2",
+      "title": "Platz zum Gehen",
+      "chapter": 1,
+      "moves": 33,
+      "pushes": 7,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-easy3",
+      "title": "Die passende Seite",
+      "chapter": 1,
+      "moves": 30,
+      "pushes": 7,
+      "toggles": 0
+    },
+    {
+      "id": "sammlung-1",
+      "title": "Eine Handbreit Platz",
+      "chapter": 1,
+      "moves": 24,
+      "pushes": 6,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-easy4",
+      "title": "Nicht bis zur Wand",
+      "chapter": 1,
+      "moves": 49,
+      "pushes": 8,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-easy5",
+      "title": "Ein Schritt zurück",
+      "chapter": 1,
+      "moves": 40,
+      "pushes": 9,
+      "toggles": 0
+    },
+    {
+      "id": "sammlung-4",
+      "title": "Kurze Wege",
+      "chapter": 1,
+      "moves": 41,
+      "pushes": 7,
+      "toggles": 0
+    },
+    {
+      "id": "sammlung-2",
+      "title": "Zwei kleine Umwege",
+      "chapter": 1,
+      "moves": 29,
+      "pushes": 9,
+      "toggles": 0
+    },
+    {
+      "id": "sammlung-5",
+      "title": "Die kleine Kammer",
+      "chapter": 1,
+      "moves": 38,
+      "pushes": 9,
+      "toggles": 0
+    },
+    {
+      "id": "vergleich-ein-platz-auf-zeit",
+      "title": "Ein Platz auf Zeit",
+      "chapter": 2,
+      "moves": 31,
+      "pushes": 9,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-easy6",
+      "title": "Ein ruhiger Umweg",
+      "chapter": 2,
+      "moves": 38,
+      "pushes": 10,
+      "toggles": 0
+    },
+    {
+      "id": "sammlung-3",
+      "title": "Der freie Stellplatz",
+      "chapter": 2,
+      "moves": 55,
+      "pushes": 10,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-easy7",
+      "title": "Noch etwas Platz",
+      "chapter": 2,
+      "moves": 62,
+      "pushes": 11,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-switchIntro1",
+      "title": "Das tiefe Ende",
+      "chapter": 2,
+      "moves": 28,
+      "pushes": 5,
+      "toggles": 1
+    },
+    {
+      "id": "lernpfad-switchIntro2",
+      "title": "Einmal hin und zurück",
+      "chapter": 2,
+      "moves": 17,
+      "pushes": 5,
+      "toggles": 2
+    },
+    {
+      "id": "lernpfad-medium0",
+      "title": "Platz für den Dritten",
+      "chapter": 2,
+      "moves": 56,
+      "pushes": 12,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-medium1",
+      "title": "Erst außen herum",
+      "chapter": 2,
+      "moves": 44,
+      "pushes": 14,
+      "toggles": 0
+    },
+    {
+      "id": "sammlung-6",
+      "title": "Drei Steine, ein Plan",
+      "chapter": 2,
+      "moves": 69,
+      "pushes": 16,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-medium2",
+      "title": "Die offene Seite",
+      "chapter": 2,
+      "moves": 61,
+      "pushes": 16,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-medium3",
+      "title": "Einer wartet kurz",
+      "chapter": 3,
+      "moves": 85,
+      "pushes": 18,
+      "toggles": 0
+    },
+    {
+      "id": "sammlung-9",
+      "title": "Der gemeinsame Gang",
+      "chapter": 3,
+      "moves": 71,
+      "pushes": 18,
+      "toggles": 0
+    },
+    {
+      "id": "katalog2-mediumB",
+      "title": "Die andere Seite",
+      "chapter": 3,
+      "moves": 57,
+      "pushes": 19,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-boardsIntro",
+      "title": "Einmal trägt es dich",
+      "chapter": 3,
+      "moves": 52,
+      "pushes": 12,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-medium4",
+      "title": "Zwei Wege kreuzen sich",
+      "chapter": 3,
+      "moves": 89,
+      "pushes": 20,
+      "toggles": 0
+    },
+    {
+      "id": "sammlung-7",
+      "title": "Verteilte Plätze",
+      "chapter": 3,
+      "moves": 84,
+      "pushes": 21,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-medium5",
+      "title": "Vorübergehend frei",
+      "chapter": 3,
+      "moves": 78,
+      "pushes": 22,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-waterIntro",
+      "title": "Das trockene Ufer",
+      "chapter": 3,
+      "moves": 55,
+      "pushes": 11,
+      "toggles": 1
+    },
+    {
+      "id": "sammlung-10",
+      "title": "Eine Frage der Reihenfolge",
+      "chapter": 3,
+      "moves": 107,
+      "pushes": 22,
+      "toggles": 0
+    },
+    {
+      "id": "vergleich-die-schmale-runde",
+      "title": "Die schmale Runde",
+      "chapter": 3,
+      "moves": 88,
+      "pushes": 23,
+      "toggles": 0
+    },
+    {
+      "id": "sammlung-8",
+      "title": "Platz zum Ausweichen",
+      "chapter": 4,
+      "moves": 137,
+      "pushes": 24,
+      "toggles": 0
+    },
+    {
+      "id": "katalog2-mediumA",
+      "title": "Ein Ziel muss warten",
+      "chapter": 4,
+      "moves": 87,
+      "pushes": 24,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-medium6",
+      "title": "Eine Lücke genügt",
+      "chapter": 4,
+      "moves": 133,
+      "pushes": 25,
+      "toggles": 0
+    },
+    {
+      "id": "sammlung-12",
+      "title": "Die freie Seite",
+      "chapter": 4,
+      "moves": 85,
+      "pushes": 17,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-medium7",
+      "title": "Die richtige Folge",
+      "chapter": 4,
+      "moves": 120,
+      "pushes": 26,
+      "toggles": 0
+    },
+    {
+      "id": "sammlung-11",
+      "title": "Noch ein Umweg",
+      "chapter": 4,
+      "moves": 79,
+      "pushes": 27,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-hard0",
+      "title": "Viereck mit Umwegen",
+      "chapter": 4,
+      "moves": 75,
+      "pushes": 22,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-hard1",
+      "title": "Zwei Zwischenlager",
+      "chapter": 4,
+      "moves": 82,
+      "pushes": 24,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-hard2",
+      "title": "Die geteilte Gasse",
+      "chapter": 4,
+      "moves": 84,
+      "pushes": 26,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-hard3",
+      "title": "Nach dem Seitenwechsel",
+      "chapter": 4,
+      "moves": 94,
+      "pushes": 29,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-hard4",
+      "title": "Kein endgültiger Platz",
+      "chapter": 5,
+      "moves": 145,
+      "pushes": 30,
+      "toggles": 0
+    },
+    {
+      "id": "katalog2-boards",
+      "title": "Bevor der Boden fehlt",
+      "chapter": 5,
+      "moves": 193,
+      "pushes": 32,
+      "toggles": 0
+    },
+    {
+      "id": "sammlung-13",
+      "title": "Druck auf beiden Seiten",
+      "chapter": 5,
+      "moves": 127,
+      "pushes": 32,
+      "toggles": 3
+    },
+    {
+      "id": "lernpfad-hard5",
+      "title": "Der lange Tausch",
+      "chapter": 5,
+      "moves": 129,
+      "pushes": 32,
+      "toggles": 0
+    },
+    {
+      "id": "katalog2-hard1",
+      "title": "Vier Wege, wenig Platz",
+      "chapter": 5,
+      "moves": 103,
+      "pushes": 34,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-boardsHard2",
+      "title": "Wenn der Weg verschwindet",
+      "chapter": 5,
+      "moves": 95,
+      "pushes": 32,
+      "toggles": 0
+    },
+    {
+      "id": "katalog2-switch",
+      "title": "Erst hin, dann zurück",
+      "chapter": 5,
+      "moves": 157,
+      "pushes": 32,
+      "toggles": 4
+    },
+    {
+      "id": "vergleich-erst-platz-schaffen",
+      "title": "Erst Platz schaffen",
+      "chapter": 5,
+      "moves": 230,
+      "pushes": 36,
+      "toggles": 0
+    },
+    {
+      "id": "nur-einmal-hinueber",
+      "title": "Nur einmal hinüber",
+      "chapter": 5,
+      "moves": 112,
+      "pushes": 33,
+      "toggles": 0
+    },
+    {
+      "id": "wechselnde-ufer",
+      "title": "Wechselnde Ufer",
+      "chapter": 5,
+      "moves": 150,
+      "pushes": 35,
+      "toggles": 3
+    },
+    {
+      "id": "katalog2-hard2",
+      "title": "Noch nicht am Ziel",
+      "chapter": 6,
+      "moves": 200,
+      "pushes": 32,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-switchHard2",
+      "title": "Die Rückseite des Plans",
+      "chapter": 6,
+      "moves": 131,
+      "pushes": 32,
+      "toggles": 3
+    },
+    {
+      "id": "verzahnte-wege",
+      "title": "Verzahnte Wege",
+      "chapter": 6,
+      "moves": 199,
+      "pushes": 38,
+      "toggles": 0
+    },
+    {
+      "id": "geliehener-stellplatz",
+      "title": "Der geliehene Stellplatz",
+      "chapter": 6,
+      "moves": 199,
+      "pushes": 38,
+      "toggles": 0
+    },
+    {
+      "id": "sammlung-14",
+      "title": "Die letzte feste Stelle",
+      "chapter": 6,
+      "moves": 195,
+      "pushes": 39,
+      "toggles": 0
+    },
+    {
+      "id": "lernpfad-switchHard1",
+      "title": "Zwischen beiden Stellungen",
+      "chapter": 6,
+      "moves": 165,
+      "pushes": 36,
+      "toggles": 4
+    },
+    {
+      "id": "lernpfad-boardsHard1",
+      "title": "Der letzte Übergang",
+      "chapter": 6,
+      "moves": 197,
+      "pushes": 37,
+      "toggles": 0
+    },
+    {
+      "id": "vor-dem-letzten-schritt",
+      "title": "Vor dem letzten Schritt",
+      "chapter": 6,
+      "moves": 188,
+      "pushes": 41,
+      "toggles": 0
+    },
+    {
+      "id": "gegenlaeufig",
+      "title": "Gegenläufig",
+      "chapter": 6,
+      "moves": 238,
+      "pushes": 44,
+      "toggles": 3
+    },
+    {
+      "id": "letzte-schalterseite",
+      "title": "Die letzte Schalterseite",
+      "chapter": 6,
+      "moves": 245,
+      "pushes": 44,
+      "toggles": 6
+    }
+  ]
+}

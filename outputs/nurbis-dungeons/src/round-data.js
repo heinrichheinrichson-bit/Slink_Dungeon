@@ -1,25 +1,9 @@
-import {rooms as catalogue2,solutions as catalogue2Solutions,introductions as catalogue2Introductions} from './katalog2-collection.js';
-import {rooms as collection,solutions as collectionSolutions,introductions as collectionIntroductions} from './sammlung-collection.js';
-import {rooms as pushing} from './interlock-collection.js';
-import {rooms as switches} from './counterflow-collection.js';
-import {rooms as boards} from './fracture-collection.js';
-import {rooms as water} from './basin-room-collection.js';
-import {solution as pushSolution} from './interlock-solution.js';
-import {solution as switchSolution} from './counterflow-solution.js';
-import {solution as boardSolution} from './fracture-solution.js';
-import {solution as waterSolution} from './basin-room-solution.js';
-import {rooms as expansion,solutions as expansionSolutions,introductions as expansionIntroductions} from './expansion-collection.js';
-import {rooms as comparison,solutions as comparisonSolutions,introductions as comparisonIntroductions} from './comparison-collection.js';
-
-export const rooms=[pushing[0],switches[0],boards[0],water[0],...expansion,...comparison,...collection,...catalogue2];
-export const solutions=[pushSolution,switchSolution,boardSolution,waterSolution,...expansionSolutions,...comparisonSolutions,...collectionSolutions,...catalogue2Solutions];
-export const introductions=[
- 'Vier Steine teilen sich enge Wege. Erreiche den Gartenfreund und öffne euren Ausgang.',
- 'Die Wippe öffnet zwei Durchgänge abwechselnd. Plane Steintransport und Schalterseite zusammen.',
- 'Die Bretter tragen Nurbi einmal. Beim Verlassen bricht die benötigte Standfläche weg.',
- 'Leere Becken sind nutzbare Wege. Die Wippe tauscht das Wasser zwischen ihnen.',
- ...expansionIntroductions,
- ...comparisonIntroductions,
- ...collectionIntroductions,
- ...catalogue2Introductions
-];
+import {rooms as allRooms,solutions as allSolutions,introductions as allIntroductions} from './catalogue-data.js';
+import {chapters,progression} from './progression-plan.js';
+export {chapters};
+export const legacyRoomIds=allRooms.slice(0,30).map(r=>r.id);
+const indices=new Map(allRooms.map((r,i)=>[r.id,i]));
+if(indices.size!==allRooms.length||progression.length!==allRooms.length||new Set(progression.map(p=>p.id)).size!==allRooms.length)throw Error('Ungültiger Lernpfad');
+export const rooms=progression.map(p=>{const at=indices.get(p.id);if(at===undefined)throw Error('Raum fehlt: '+p.id);const room=allRooms[at];return {...room,level:{...room.level,chapter:p.chapter,chapterTitle:chapters[p.chapter-1].title,phase:p.phase}};});
+export const solutions=progression.map(p=>allSolutions[indices.get(p.id)]);
+export const introductions=progression.map(p=>allIntroductions[indices.get(p.id)]);

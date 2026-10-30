@@ -1,0 +1,452 @@
+[
+  {
+    "key": "easy0",
+    "kind": "push",
+    "id": "lernpfad-easy0",
+    "title": "Ein freier Weg",
+    "difficulty": "leicht",
+    "desc": "Zwei Steine, zwei Druckplatten. Finde die nötigen Standflächen und halte den Weg zum Freund frei.",
+    "hint": "Du schiebst immer von der gegenüberliegenden Seite. Direkt an einer Wand fehlt dir dafür oft die Standfläche.",
+    "tags": [
+      "Leicht",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Standflächen"
+  },
+  {
+    "key": "easy1",
+    "kind": "push",
+    "id": "lernpfad-easy1",
+    "title": "Zwei kleine Aufgaben",
+    "difficulty": "leicht",
+    "desc": "Zwei Steine, zwei Druckplatten. Finde die nötigen Standflächen und halte den Weg zum Freund frei.",
+    "hint": "Du schiebst immer von der gegenüberliegenden Seite. Direkt an einer Wand fehlt dir dafür oft die Standfläche.",
+    "tags": [
+      "Leicht",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Standflächen"
+  },
+  {
+    "key": "easy2",
+    "kind": "push",
+    "id": "lernpfad-easy2",
+    "title": "Platz zum Gehen",
+    "difficulty": "leicht",
+    "desc": "Zwei Steine, zwei Druckplatten. Finde die nötigen Standflächen und halte den Weg zum Freund frei.",
+    "hint": "Du schiebst immer von der gegenüberliegenden Seite. Direkt an einer Wand fehlt dir dafür oft die Standfläche.",
+    "tags": [
+      "Leicht",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Standflächen"
+  },
+  {
+    "key": "easy3",
+    "kind": "push",
+    "id": "lernpfad-easy3",
+    "title": "Die passende Seite",
+    "difficulty": "leicht",
+    "desc": "Zwei Steine, zwei Druckplatten. Finde die nötigen Standflächen und halte den Weg zum Freund frei.",
+    "hint": "Du schiebst immer von der gegenüberliegenden Seite. Direkt an einer Wand fehlt dir dafür oft die Standfläche.",
+    "tags": [
+      "Leicht",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Standflächen"
+  },
+  {
+    "key": "easy4",
+    "kind": "push",
+    "id": "lernpfad-easy4",
+    "title": "Nicht bis zur Wand",
+    "difficulty": "leicht",
+    "desc": "Zwei Steine, zwei Druckplatten. Finde die nötigen Standflächen und halte den Weg zum Freund frei.",
+    "hint": "Du schiebst immer von der gegenüberliegenden Seite. Direkt an einer Wand fehlt dir dafür oft die Standfläche.",
+    "tags": [
+      "Leicht",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Standflächen"
+  },
+  {
+    "key": "easy5",
+    "kind": "push",
+    "id": "lernpfad-easy5",
+    "title": "Ein Schritt zurück",
+    "difficulty": "leicht",
+    "desc": "Zwei Steine, zwei Druckplatten. Finde die nötigen Standflächen und halte den Weg zum Freund frei.",
+    "hint": "Du schiebst immer von der gegenüberliegenden Seite. Direkt an einer Wand fehlt dir dafür oft die Standfläche.",
+    "tags": [
+      "Leicht",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Standflächen"
+  },
+  {
+    "key": "easy6",
+    "kind": "push",
+    "id": "lernpfad-easy6",
+    "title": "Ein ruhiger Umweg",
+    "difficulty": "leicht",
+    "desc": "Zwei Steine, zwei Druckplatten. Finde die nötigen Standflächen und halte den Weg zum Freund frei.",
+    "hint": "Du schiebst immer von der gegenüberliegenden Seite. Direkt an einer Wand fehlt dir dafür oft die Standfläche.",
+    "tags": [
+      "Leicht",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Standflächen"
+  },
+  {
+    "key": "easy7",
+    "kind": "push",
+    "id": "lernpfad-easy7",
+    "title": "Noch etwas Platz",
+    "difficulty": "leicht",
+    "desc": "Zwei Steine, zwei Druckplatten. Finde die nötigen Standflächen und halte den Weg zum Freund frei.",
+    "hint": "Du schiebst immer von der gegenüberliegenden Seite. Direkt an einer Wand fehlt dir dafür oft die Standfläche.",
+    "tags": [
+      "Leicht",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Standflächen"
+  },
+  {
+    "key": "medium0",
+    "kind": "push",
+    "id": "lernpfad-medium0",
+    "title": "Platz für den Dritten",
+    "difficulty": "mittel",
+    "desc": "Mehrere Steine brauchen dieselben Standflächen. Bereite Zwischenplätze vor und halte den nächsten Schiebeweg offen.",
+    "hint": "Überlege vor jedem Schieben, wie du danach hinter den Stein gelangst.",
+    "tags": [
+      "Mittel",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Zwischenplätze"
+  },
+  {
+    "key": "medium1",
+    "kind": "push",
+    "id": "lernpfad-medium1",
+    "title": "Erst außen herum",
+    "difficulty": "mittel",
+    "desc": "Die Zielplätze teilen sich wichtige Arbeitswege. Entscheide, wann ein Stein wirklich an seinem Platz bleiben kann.",
+    "hint": "Mindestens ein belegtes Ziel muss später wieder frei werden. Ein Ziel ist nicht immer der letzte Parkplatz.",
+    "tags": [
+      "Mittel",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Ziele freigeben"
+  },
+  {
+    "key": "medium2",
+    "kind": "push",
+    "id": "lernpfad-medium2",
+    "title": "Die offene Seite",
+    "difficulty": "mittel",
+    "desc": "Die Zielplätze teilen sich wichtige Arbeitswege. Entscheide, wann ein Stein wirklich an seinem Platz bleiben kann.",
+    "hint": "Mindestens ein belegtes Ziel muss später wieder frei werden. Ein Ziel ist nicht immer der letzte Parkplatz.",
+    "tags": [
+      "Mittel",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Ziele freigeben"
+  },
+  {
+    "key": "medium3",
+    "kind": "push",
+    "id": "lernpfad-medium3",
+    "title": "Einer wartet kurz",
+    "difficulty": "mittel",
+    "desc": "Mehrere Steine brauchen dieselben Standflächen. Bereite Zwischenplätze vor und halte den nächsten Schiebeweg offen.",
+    "hint": "Überlege vor jedem Schieben, wie du danach hinter den Stein gelangst.",
+    "tags": [
+      "Mittel",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Zwischenplätze"
+  },
+  {
+    "key": "medium4",
+    "kind": "push",
+    "id": "lernpfad-medium4",
+    "title": "Zwei Wege kreuzen sich",
+    "difficulty": "mittel",
+    "desc": "Die Zielplätze teilen sich wichtige Arbeitswege. Entscheide, wann ein Stein wirklich an seinem Platz bleiben kann.",
+    "hint": "Mindestens ein belegtes Ziel muss später wieder frei werden. Ein Ziel ist nicht immer der letzte Parkplatz.",
+    "tags": [
+      "Mittel",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Ziele freigeben"
+  },
+  {
+    "key": "medium5",
+    "kind": "push",
+    "id": "lernpfad-medium5",
+    "title": "Vorübergehend frei",
+    "difficulty": "mittel",
+    "desc": "Mehrere Steine brauchen dieselben Standflächen. Bereite Zwischenplätze vor und halte den nächsten Schiebeweg offen.",
+    "hint": "Überlege vor jedem Schieben, wie du danach hinter den Stein gelangst.",
+    "tags": [
+      "Mittel",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Zwischenplätze"
+  },
+  {
+    "key": "medium6",
+    "kind": "push",
+    "id": "lernpfad-medium6",
+    "title": "Eine Lücke genügt",
+    "difficulty": "mittel",
+    "desc": "Die Zielplätze teilen sich wichtige Arbeitswege. Entscheide, wann ein Stein wirklich an seinem Platz bleiben kann.",
+    "hint": "Mindestens ein belegtes Ziel muss später wieder frei werden. Ein Ziel ist nicht immer der letzte Parkplatz.",
+    "tags": [
+      "Mittel",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Ziele freigeben"
+  },
+  {
+    "key": "medium7",
+    "kind": "push",
+    "id": "lernpfad-medium7",
+    "title": "Die richtige Folge",
+    "difficulty": "mittel",
+    "desc": "Mehrere Steine brauchen dieselben Standflächen. Bereite Zwischenplätze vor und halte den nächsten Schiebeweg offen.",
+    "hint": "Überlege vor jedem Schieben, wie du danach hinter den Stein gelangst.",
+    "tags": [
+      "Mittel",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Zwischenplätze"
+  },
+  {
+    "key": "hard0",
+    "kind": "push",
+    "id": "lernpfad-hard0",
+    "title": "Viereck mit Umwegen",
+    "difficulty": "anspruchsvoll",
+    "desc": "Die Zielplätze teilen sich wichtige Arbeitswege. Entscheide, wann ein Stein wirklich an seinem Platz bleiben kann.",
+    "hint": "Mindestens ein belegtes Ziel muss später wieder frei werden. Ein Ziel ist nicht immer der letzte Parkplatz.",
+    "tags": [
+      "Anspruchsvoll",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Ziele freigeben"
+  },
+  {
+    "key": "hard1",
+    "kind": "push",
+    "id": "lernpfad-hard1",
+    "title": "Zwei Zwischenlager",
+    "difficulty": "anspruchsvoll",
+    "desc": "Die Zielplätze teilen sich wichtige Arbeitswege. Entscheide, wann ein Stein wirklich an seinem Platz bleiben kann.",
+    "hint": "Mindestens ein belegtes Ziel muss später wieder frei werden. Ein Ziel ist nicht immer der letzte Parkplatz.",
+    "tags": [
+      "Anspruchsvoll",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Ziele freigeben"
+  },
+  {
+    "key": "hard2",
+    "kind": "push",
+    "id": "lernpfad-hard2",
+    "title": "Die geteilte Gasse",
+    "difficulty": "anspruchsvoll",
+    "desc": "Mehrere Steine brauchen dieselben Standflächen. Bereite Zwischenplätze vor und halte den nächsten Schiebeweg offen.",
+    "hint": "Überlege vor jedem Schieben, wie du danach hinter den Stein gelangst.",
+    "tags": [
+      "Anspruchsvoll",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Zwischenplätze"
+  },
+  {
+    "key": "hard3",
+    "kind": "push",
+    "id": "lernpfad-hard3",
+    "title": "Nach dem Seitenwechsel",
+    "difficulty": "anspruchsvoll",
+    "desc": "Die Zielplätze teilen sich wichtige Arbeitswege. Entscheide, wann ein Stein wirklich an seinem Platz bleiben kann.",
+    "hint": "Mindestens ein belegtes Ziel muss später wieder frei werden. Ein Ziel ist nicht immer der letzte Parkplatz.",
+    "tags": [
+      "Anspruchsvoll",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Ziele freigeben"
+  },
+  {
+    "key": "hard4",
+    "kind": "push",
+    "id": "lernpfad-hard4",
+    "title": "Kein endgültiger Platz",
+    "difficulty": "anspruchsvoll",
+    "desc": "Die Zielplätze teilen sich wichtige Arbeitswege. Entscheide, wann ein Stein wirklich an seinem Platz bleiben kann.",
+    "hint": "Mindestens ein belegtes Ziel muss später wieder frei werden. Ein Ziel ist nicht immer der letzte Parkplatz.",
+    "tags": [
+      "Anspruchsvoll",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Ziele freigeben"
+  },
+  {
+    "key": "hard5",
+    "kind": "push",
+    "id": "lernpfad-hard5",
+    "title": "Der lange Tausch",
+    "difficulty": "anspruchsvoll",
+    "desc": "Die Zielplätze teilen sich wichtige Arbeitswege. Entscheide, wann ein Stein wirklich an seinem Platz bleiben kann.",
+    "hint": "Mindestens ein belegtes Ziel muss später wieder frei werden. Ein Ziel ist nicht immer der letzte Parkplatz.",
+    "tags": [
+      "Anspruchsvoll",
+      "Schieberätsel"
+    ],
+    "rule": "createRescueRules",
+    "concept": "Ziele freigeben"
+  },
+  {
+    "key": "switchIntro1",
+    "kind": "switch",
+    "id": "lernpfad-switchIntro1",
+    "title": "Das tiefe Ende",
+    "difficulty": "leicht",
+    "desc": "Die Wippe öffnet einen Weg und schließt einen anderen. Tritt vom tiefen Ende ein und gehe vollständig darüber.",
+    "hint": "Auf das tiefe Ende treten schaltet noch nichts. Du darfst zurückgehen. Erst vollständiges Überqueren kippt die Wippe.",
+    "tags": [
+      "Leicht",
+      "Richtungswippe"
+    ],
+    "rule": "createSwitchRescueRules",
+    "concept": "Wippenseiten"
+  },
+  {
+    "key": "switchIntro2",
+    "kind": "switch",
+    "id": "lernpfad-switchIntro2",
+    "title": "Einmal hin und zurück",
+    "difficulty": "leicht",
+    "desc": "Diesmal brauchst du beide Stellungen der Wippe. Bereite vor, wie du später wieder an ihr tiefes Ende gelangst.",
+    "hint": "Nach dem Kippen liegt das tiefe Ende auf der anderen Seite. Plane den Weg dorthin.",
+    "tags": [
+      "Leicht",
+      "Richtungswippe"
+    ],
+    "rule": "createSwitchRescueRules",
+    "concept": "Wippenseiten"
+  },
+  {
+    "key": "boardsIntro",
+    "kind": "boards",
+    "id": "lernpfad-boardsIntro",
+    "title": "Einmal trägt es dich",
+    "difficulty": "mittel",
+    "desc": "Diese morschen Bretter tragen Nurbi einmal. Beim Verlassen brechen sie weg; danach brauchst du einen festen Rückweg.",
+    "hint": "Erledige vor dem Überqueren die Arbeit, für die du diese Standfläche noch brauchst.",
+    "tags": [
+      "Mittel",
+      "Morsche Bretter"
+    ],
+    "rule": "createFractureRescueRules",
+    "concept": "Einmalige Standfläche"
+  },
+  {
+    "key": "waterIntro",
+    "kind": "water",
+    "id": "lernpfad-waterIntro",
+    "title": "Das trockene Ufer",
+    "difficulty": "mittel",
+    "desc": "Die Wippe tauscht den Wasserstand zwischen zwei Becken. Nur das trockene Becken ist begehbar; benutze seine Treppenenden.",
+    "hint": "Steine bleiben im gefluteten Becken liegen. Lege es trocken, bevor du sie weiterschiebst.",
+    "tags": [
+      "Mittel",
+      "Wasserwechsel"
+    ],
+    "rule": "createWaterRescueRules",
+    "concept": "Trockene Wege"
+  },
+  {
+    "key": "switchHard1",
+    "kind": "switch",
+    "id": "lernpfad-switchHard1",
+    "title": "Zwischen beiden Stellungen",
+    "difficulty": "anspruchsvoll",
+    "desc": "Vier Steine und zwei wechselnde Durchgänge teilen sich die Arbeitswege. Plane mehrere Wechsel im Voraus.",
+    "hint": "Die gerade offene Seite kann später wieder schließen. Halte den Zugang zur Wippe erreichbar.",
+    "tags": [
+      "Anspruchsvoll",
+      "Richtungswippe"
+    ],
+    "rule": "createSwitchRescueRules",
+    "concept": "Wippenseiten"
+  },
+  {
+    "key": "switchHard2",
+    "kind": "switch",
+    "id": "lernpfad-switchHard2",
+    "title": "Die Rückseite des Plans",
+    "difficulty": "anspruchsvoll",
+    "desc": "Ein erster offener Weg genügt hier nicht. Koordiniere die nächsten Steinplätze mit der erreichbaren Wippenseite.",
+    "hint": "Bevor du umschaltest, prüfe, auf welcher Seite die benötigten Steine und Standflächen liegen.",
+    "tags": [
+      "Anspruchsvoll",
+      "Richtungswippe"
+    ],
+    "rule": "createSwitchRescueRules",
+    "concept": "Wippenseiten"
+  },
+  {
+    "key": "boardsHard1",
+    "kind": "boards",
+    "id": "lernpfad-boardsHard1",
+    "title": "Der letzte Übergang",
+    "difficulty": "anspruchsvoll",
+    "desc": "Ein morsches Feld verbindet mehrere Arbeitswege. Bereite die endgültige Überquerung vor.",
+    "hint": "Nach dem Einbruch muss auch der Freund noch auf festem Boden zum Ausgang gelangen können.",
+    "tags": [
+      "Anspruchsvoll",
+      "Morsche Bretter"
+    ],
+    "rule": "createFractureRescueRules",
+    "concept": "Einmalige Standfläche"
+  },
+  {
+    "key": "boardsHard2",
+    "kind": "boards",
+    "id": "lernpfad-boardsHard2",
+    "title": "Wenn der Weg verschwindet",
+    "difficulty": "anspruchsvoll",
+    "desc": "Vier Steine, wenig Rangierraum und eine einmal nutzbare Standfläche. Der Einsturz gehört zur Planung.",
+    "hint": "Verschiebe die letzte Überquerung so lange, bis keine Arbeit mehr auf den alten Zugang angewiesen ist.",
+    "tags": [
+      "Anspruchsvoll",
+      "Morsche Bretter"
+    ],
+    "rule": "createFractureRescueRules",
+    "concept": "Einmalige Standfläche"
+  }
+]

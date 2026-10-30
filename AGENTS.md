@@ -6,6 +6,10 @@ This repository contains the Nurbi dungeon game, its design studies, Android tes
 
 Preserve all three button material variants (stone, wood, stone/ivory), without backing plates. The PC design studies remain available. Nurbi is nature-loving; preserve the established game and puzzle rules.
 
+Floor mechanics must be recognizable by shape and structure, not just color. Preserve both once-walkable fragile floors and weight-triggered floors as distinct behaviors; their final visual differentiation remains a design task.
+
+The 60-room catalogue uses the curated order in outputs/nurbis-dungeons/src/progression-plan.js. Preserve room IDs and saved progress when revising the learning curve. Do not infer human difficulty solely from solution length. Keep gentle groups of practice rooms and separate introductions to mechanisms.
+
 ## Version backups — explicit user requirement
 
 After EACH completed new version or requested change: run the appropriate checks, commit the finished project state, create a unique snapshot tag, and push both commit and tag to https://github.com/heinrichheinrichson-bit/Slink_Dungeon.git. This is event-based, not a timed automation. Do not report a GitHub backup as complete until the remote push is confirmed. If unavailable, retain the local commit and tell the user that the push remains pending. Never force-push or overwrite remote history.

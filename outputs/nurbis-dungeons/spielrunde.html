@@ -6,6 +6,7 @@
 <main>
  <section id="overview" aria-labelledby="overview-title">
   <div class="welcome"><p class="eyebrow">WEGE ZURÜCK</p><h1 id="overview-title">Unter den Gärten.</h1><p id="overview-text"></p><button id="continue" class="primary">Spielrunde beginnen</button><p class="small">Ohne Zeitdruck · Wischen oder Nachbarfeld antippen · Jeder Zug ist rückgängig machbar</p></div>
+  <div class="chapter-picker"><label for="chapter-select">Abschnitt</label><select id="chapter-select"><option value="all">Alle sechs Abschnitte</option></select></div><p id="chapter-description" class="small"></p>
   <nav class="collection-filters" aria-label="Schwierigkeit"><button data-difficulty="all" aria-pressed="true">Alle</button><button data-difficulty="leicht" aria-pressed="false">Leicht</button><button data-difficulty="mittel" aria-pressed="false">Mittel</button><button data-difficulty="anspruchsvoll" aria-pressed="false">Anspruchsvoll</button><label><input type="checkbox" id="only-open"> Nur offene</label></nav>
   <p id="filter-result" class="small" aria-live="polite"></p><p id="empty" hidden>Alle Räume dieser Auswahl sind bereits gelöst. Entferne „Nur offene“, um sie erneut zu spielen.</p>
   <div id="room-cards" class="room-cards" aria-label="Raum auswählen"></div>
@@ -16,6 +17,7 @@
   <div class="play-layout">
    <aside class="room-text"><p class="eyebrow" id="tags"></p><h1 id="title"></h1><p id="description"></p><details><summary>Ein Gedanke für den Weg</summary><p id="hint"></p></details>
     <details id="guide" class="solution-guide"><summary>Tester · Schrittweise Lösung</summary><p class="small">Die Testlösung lässt sich Zug für Zug ansehen. Eigenes Spielen und Rückgängig bleiben verfügbar.</p><div class="solution-buttons"><button id="solution-step">Nächster Lösungsschritt →</button><button id="solution-restart" class="quiet">Lösung von vorn</button></div><p id="solution-progress" class="small" aria-live="polite"></p></details>
+    <details class="tester-feedback"><summary>Tester · Wie war der Raum?</summary><div class="feedback-buttons"><button data-feedback="Zu leicht">Zu leicht</button><button data-feedback="Passend">Passend</button><button data-feedback="Zu schwer">Zu schwer</button><button data-feedback="Unklar">Unklar</button></div><p id="feedback-result" class="small" aria-live="polite"></p></details>
    </aside>
    <section class="game" aria-label="Spielfeld und Bewegung">
     <div class="game-top"><span id="objective"></span><span id="moves"></span></div>

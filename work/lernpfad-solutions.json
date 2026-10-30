@@ -1,0 +1,542 @@
+[
+  {
+    "id": "lernpfad-easy0",
+    "title": "Ein freier Weg",
+    "moves": 12,
+    "pushes": 4,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      6,
+      5
+    ],
+    "exit": [
+      8,
+      6
+    ],
+    "solution": "DRDDLUURDDRR"
+  },
+  {
+    "id": "lernpfad-easy1",
+    "title": "Zwei kleine Aufgaben",
+    "moves": 17,
+    "pushes": 5,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      5,
+      5
+    ],
+    "exit": [
+      8,
+      6
+    ],
+    "solution": "ULDRDLDDRUUDLRDRR"
+  },
+  {
+    "id": "lernpfad-easy2",
+    "title": "Platz zum Gehen",
+    "moves": 33,
+    "pushes": 7,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      5,
+      5
+    ],
+    "exit": [
+      8,
+      6
+    ],
+    "solution": "DUURRDDDLLLDLURRUURURDDULLDDRDRRR"
+  },
+  {
+    "id": "lernpfad-easy3",
+    "title": "Die passende Seite",
+    "moves": 30,
+    "pushes": 7,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      3,
+      5
+    ],
+    "exit": [
+      8,
+      6
+    ],
+    "solution": "RDRRUULDRDLULDDLDRLLURRURRDDRR"
+  },
+  {
+    "id": "lernpfad-easy4",
+    "title": "Nicht bis zur Wand",
+    "moves": 49,
+    "pushes": 8,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      2,
+      5
+    ],
+    "exit": [
+      8,
+      6
+    ],
+    "solution": "RURUULLDLDLDRRLUUURRRDDDDLULUDRRULLDLUUDDLRRRRDRR"
+  },
+  {
+    "id": "lernpfad-easy5",
+    "title": "Ein Schritt zurück",
+    "moves": 40,
+    "pushes": 9,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      4,
+      4
+    ],
+    "exit": [
+      8,
+      6
+    ],
+    "solution": "DRDDLULULLDDRUULURDRDRUUDLLUURRDDLRRDDRR"
+  },
+  {
+    "id": "lernpfad-easy6",
+    "title": "Ein ruhiger Umweg",
+    "moves": 38,
+    "pushes": 10,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      4,
+      3
+    ],
+    "exit": [
+      8,
+      6
+    ],
+    "solution": "LLLDRURRDULLDRRDRUUDDDLLLRRUUULRRDDDRR"
+  },
+  {
+    "id": "lernpfad-easy7",
+    "title": "Noch etwas Platz",
+    "moves": 62,
+    "pushes": 11,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      3,
+      5
+    ],
+    "exit": [
+      8,
+      6
+    ],
+    "solution": "ULLUUURRRDLLLDDRRUDDRRUULULULLDDDRRUULULDRRRULDLLDURRDDLRDRRRR"
+  },
+  {
+    "id": "lernpfad-medium0",
+    "title": "Platz für den Dritten",
+    "moves": 56,
+    "pushes": 12,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      3,
+      5
+    ],
+    "exit": [
+      9,
+      7
+    ],
+    "solution": "RDLUUURRRDDLRUULLDLDDRUUUDLLLDRURRDDLUURULDLUUDDRRDRRDRR"
+  },
+  {
+    "id": "lernpfad-medium1",
+    "title": "Erst außen herum",
+    "moves": 44,
+    "pushes": 14,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": null,
+    "friend": [
+      5,
+      5
+    ],
+    "exit": [
+      9,
+      7
+    ],
+    "solution": "RRRDDDRURULDLUDLLLDDRULURRRURRDLLLLRRDRDDRRR"
+  },
+  {
+    "id": "lernpfad-medium2",
+    "title": "Die offene Seite",
+    "moves": 61,
+    "pushes": 16,
+    "toggles": 0,
+    "goalVacates": 2,
+    "collapseStep": null,
+    "friend": [
+      3,
+      6
+    ],
+    "exit": [
+      9,
+      5
+    ],
+    "solution": "DDDLURRRDLULLDLDLUUURRRDRDLRDDLUURULULLLDDRRURRDDLULLDURRRRRR"
+  },
+  {
+    "id": "lernpfad-medium3",
+    "title": "Einer wartet kurz",
+    "moves": 85,
+    "pushes": 18,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      4,
+      5
+    ],
+    "exit": [
+      9,
+      5
+    ],
+    "solution": "DDRDDLLURUUULLDRURDDRRULLULLDRURDRRDDDLUDLLURDRRUUULLDDUURRDDDLLURLUURRDDLLURDLLRRRRR"
+  },
+  {
+    "id": "lernpfad-medium4",
+    "title": "Zwei Wege kreuzen sich",
+    "moves": 89,
+    "pushes": 20,
+    "toggles": 0,
+    "goalVacates": 3,
+    "collapseStep": null,
+    "friend": [
+      5,
+      4
+    ],
+    "exit": [
+      9,
+      7
+    ],
+    "solution": "ULURLLUURDLDRDRRRRUULLDURRDDDLLLULURDRRDRUUULLDLDRRLUURRUDLLULRDDLLULUURDDLDRUURRDDDRDRRR"
+  },
+  {
+    "id": "lernpfad-medium5",
+    "title": "Vorübergehend frei",
+    "moves": 78,
+    "pushes": 22,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      3,
+      4
+    ],
+    "exit": [
+      9,
+      4
+    ],
+    "solution": "URDDDLUDLLURRDRUUULDURRUULLDURRDDLULURDDDLDURUULDDRDDLLURDRUULURRURDLLLLRRRRRR"
+  },
+  {
+    "id": "lernpfad-medium6",
+    "title": "Eine Lücke genügt",
+    "moves": 133,
+    "pushes": 25,
+    "toggles": 0,
+    "goalVacates": 3,
+    "collapseStep": null,
+    "friend": [
+      2,
+      5
+    ],
+    "exit": [
+      9,
+      7
+    ],
+    "solution": "DDLLDDRRDRRULLLDLLUUURRRDULLDLDDRRURDLLURRUUUULDRDDDDRRULDLUUUULURRLDDDDLLLUURRLLDDRULURDDRRUUUDDDLLUURLDDRRUULUURLDDRUDLLDLRDRRRRDRR"
+  },
+  {
+    "id": "lernpfad-medium7",
+    "title": "Die richtige Folge",
+    "moves": 120,
+    "pushes": 26,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": null,
+    "friend": [
+      4,
+      4
+    ],
+    "exit": [
+      9,
+      7
+    ],
+    "solution": "LULLDRRRURUULLDURRDDLDLLURUURRRDDDLUUULLDDLLURDRRRUULLDLDRUURRDDDRUULULLDDRLUURRDRDDLUUUURULLLRDDLDDDRURURUUDLLLRRRDDDRR"
+  },
+  {
+    "id": "lernpfad-hard0",
+    "title": "Viereck mit Umwegen",
+    "moves": 75,
+    "pushes": 22,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": null,
+    "friend": [
+      3,
+      5
+    ],
+    "exit": [
+      10,
+      7
+    ],
+    "solution": "DDLLRDDLULULLDRRURDULLUURDLDDRRULDLUURULRDDRDRDRUULLDLURRRUDDLLLLLRRRRRDDRR"
+  },
+  {
+    "id": "lernpfad-hard1",
+    "title": "Zwei Zwischenlager",
+    "moves": 82,
+    "pushes": 24,
+    "toggles": 0,
+    "goalVacates": 3,
+    "collapseStep": null,
+    "friend": [
+      2,
+      5
+    ],
+    "exit": [
+      10,
+      3
+    ],
+    "solution": "LLDDRRRUUUULURRRDDLLDLUDLLURRRRURDDUUULLLDRDDLLURRRURDLLDDDLLUULURRRDLLLURRURRRRRR"
+  },
+  {
+    "id": "lernpfad-hard2",
+    "title": "Die geteilte Gasse",
+    "moves": 84,
+    "pushes": 26,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      4,
+      5
+    ],
+    "exit": [
+      10,
+      4
+    ],
+    "solution": "LDLURDDDLULLDLLURRRRRUULDURUULDRDDDLLLURRDRUURUULLDDRDDLLURURDDUULURDDDLLLLRURRURRRR"
+  },
+  {
+    "id": "lernpfad-hard3",
+    "title": "Nach dem Seitenwechsel",
+    "moves": 94,
+    "pushes": 29,
+    "toggles": 0,
+    "goalVacates": 2,
+    "collapseStep": null,
+    "friend": [
+      3,
+      4
+    ],
+    "exit": [
+      10,
+      5
+    ],
+    "solution": "LLLLUUUURRURRDLLLDLLUURDDDLDLDRRRRRLLLLUURDLDRUURRULURURRDDLLULDRDLLULDURRRRULURDDLLLLRRRRRDRR"
+  },
+  {
+    "id": "lernpfad-hard4",
+    "title": "Kein endgültiger Platz",
+    "moves": 145,
+    "pushes": 30,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": null,
+    "friend": [
+      4,
+      4
+    ],
+    "exit": [
+      10,
+      6
+    ],
+    "solution": "RURDRRDRRULLLLULLDRRRLULLUURRRRDRDDUULULLLLDDRRDRRDRLULLULLUURRRRDRDDLLLLDDRULUULUURRRRDRDDLLLULULURRLDDRDDLUUUDRDRRRRDULLDDRURULLLLULDURDRRRRDRR"
+  },
+  {
+    "id": "lernpfad-hard5",
+    "title": "Der lange Tausch",
+    "moves": 129,
+    "pushes": 32,
+    "toggles": 0,
+    "goalVacates": 3,
+    "collapseStep": null,
+    "friend": [
+      2,
+      5
+    ],
+    "exit": [
+      10,
+      6
+    ],
+    "solution": "LLDDDUUURRDDDRDLDLLLUURDLDRLLULURDRRUUUURRDDDDLLDLLUURLDDRRURRDLULLRRRUUUULLDDDLDRRDRUUUURULDDDDLLULLLDRRRRDRULLLDRUULLLRRRDRRRRR"
+  },
+  {
+    "id": "lernpfad-switchIntro1",
+    "title": "Das tiefe Ende",
+    "moves": 28,
+    "pushes": 5,
+    "toggles": 1,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      4,
+      4
+    ],
+    "exit": [
+      8,
+      5
+    ],
+    "solution": "RDDRRDULLLDRRURUULLLRDDRRDRR"
+  },
+  {
+    "id": "lernpfad-switchIntro2",
+    "title": "Einmal hin und zurück",
+    "moves": 17,
+    "pushes": 5,
+    "toggles": 2,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      5,
+      5
+    ],
+    "exit": [
+      8,
+      6
+    ],
+    "solution": "RURRDLRULLDDRRDRR"
+  },
+  {
+    "id": "lernpfad-boardsIntro",
+    "title": "Einmal trägt es dich",
+    "moves": 52,
+    "pushes": 12,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": 5,
+    "friend": [
+      4,
+      5
+    ],
+    "exit": [
+      9,
+      7
+    ],
+    "solution": "UURUUULLDRRURRDULLDRRDDLLLUDRRRUUULLLLDRRLDDRRDDRRRR"
+  },
+  {
+    "id": "lernpfad-waterIntro",
+    "title": "Das trockene Ufer",
+    "moves": 55,
+    "pushes": 11,
+    "toggles": 1,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      4,
+      3
+    ],
+    "exit": [
+      12,
+      6
+    ],
+    "solution": "URRUULDRDDDLLUURURDDULLDRRUURRRRRURDDULLLLLLRRRRRDDDRRR"
+  },
+  {
+    "id": "lernpfad-switchHard1",
+    "title": "Zwischen beiden Stellungen",
+    "moves": 165,
+    "pushes": 36,
+    "toggles": 4,
+    "goalVacates": 5,
+    "collapseStep": null,
+    "friend": [
+      2,
+      5
+    ],
+    "exit": [
+      10,
+      6
+    ],
+    "solution": "LUURRRDDDDLLLUURDLDRRDRUUURUULLDRURDDUULLLLDDRDDLLLUUURURRRRDDDDLLUULDRDRRUUUULLLDDULLDDDRRRUULDUULLDRURDRDDRDRUUURULDDDLLUULLLDDRRRRDRUUDRUUDDLLLUULDULLDURRRDDRRRRR"
+  },
+  {
+    "id": "lernpfad-switchHard2",
+    "title": "Die Rückseite des Plans",
+    "moves": 131,
+    "pushes": 32,
+    "toggles": 3,
+    "goalVacates": 4,
+    "collapseStep": null,
+    "friend": [
+      3,
+      5
+    ],
+    "exit": [
+      0,
+      7
+    ],
+    "solution": "UURUULDDDLDRUURRDRRULLLULDDURRRUURDDLLLLDLDLDRRUUUDDDRRUUDDLLURDRULLUURRLLDDRRUDDLLLLURRRRURUDLDLLUURRLUULDDDLDRRLLLDRRRRULLULDLDLL"
+  },
+  {
+    "id": "lernpfad-boardsHard1",
+    "title": "Der letzte Übergang",
+    "moves": 197,
+    "pushes": 37,
+    "toggles": 0,
+    "goalVacates": 4,
+    "collapseStep": 58,
+    "friend": [
+      4,
+      5
+    ],
+    "exit": [
+      10,
+      6
+    ],
+    "solution": "RULULLDDDRDRRDRULLLULLDRUUUURRDLULDDDRDULLDRRRLULUURRRRRDLULLLLDDRDRDRRUUUDDDLLULULUUURRRRRDLLLLULDDDUURRDRULLLDDRDRDRRUUULULLLDDLDRUUUURRRRRDLLLULLDDDDDRRLLUURDLDRUULUUURRDLULDDDLDRURLUURRRRDDDRRR"
+  },
+  {
+    "id": "lernpfad-boardsHard2",
+    "title": "Wenn der Weg verschwindet",
+    "moves": 95,
+    "pushes": 32,
+    "toggles": 0,
+    "goalVacates": 5,
+    "collapseStep": 76,
+    "friend": [
+      6,
+      4
+    ],
+    "exit": [
+      10,
+      7
+    ],
+    "solution": "RDRRRURRDLLLLDDRULURRLLULLUURRDDDDURRURRDLLLDLUULLUURRDDDRDDLRUULDURRURRUULDDRDLLLDLURRURRDDDRR"
+  }
+]
