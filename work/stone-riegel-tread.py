@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('outputs/nurbis-dungeons/src/dungeon-rooms.js');s=p.read_text(encoding='utf-8-sig');old="box(53,66,3,3,'#84928a',X,Y,10);\n for(const yy of [-22,-11,0,11,22])box(42,1.1,.6,.3,'#b2b6a1',X,Y+yy,11.8);";new="const tread=library.stone(level.floor,seed,world,X,Y,false,0);tread.position.z=-1;tread.scale.set(.77,1.075,.24);";assert old in s;s=s.replace(old,new);p.write_text(s,encoding='utf-8')

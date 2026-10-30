@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('outputs/nurbis-dungeons/src/dungeon-rooms.js');s=p.read_text(encoding='utf-8-sig').replace("if(c!=='C'&&!(level.water", "if(c!=='C'&&!level.recesses?.some(p=>p[0]===x&&p[1]===y)&&!(level.water");s=s.replace("box(54,59,12,3,'#1c2927',px,py,-2);", "box(54,59,3,3,'#182321',px,py,8);").replace("' #8f896b'", "'#8f896b'").replace("'#8f896b',px,py,4)","'#8f896b',px,py,10.5)");p.write_text(s,encoding='utf-8')

@@ -1,0 +1,38 @@
+[
+  {
+    "steps": 24,
+    "pushes": 0,
+    "path": "RRDDLLDDRRDDDDRRRRUURRDD",
+    "states": 40
+  },
+  {
+    "steps": 17,
+    "pushes": 2,
+    "path": "ULUUUURRDDRRUURRR",
+    "states": 101
+  },
+  {
+    "steps": 13,
+    "pushes": 6,
+    "path": "URUUUURRUURRR",
+    "states": 280
+  },
+  {
+    "steps": 21,
+    "pushes": 6,
+    "path": "URURDDUURUURRUULLLLLD",
+    "states": 1148
+  },
+  {
+    "steps": 27,
+    "pushes": 6,
+    "path": "RDRRUURRURDLLLLLRRUUUUULLDL",
+    "states": 16236
+  },
+  {
+    "steps": 46,
+    "pushes": 14,
+    "path": "ULLLUURRDRUUUURULLLLLULDDLDRUURRRRDDDDLLLLLDDD",
+    "states": 3656
+  }
+]

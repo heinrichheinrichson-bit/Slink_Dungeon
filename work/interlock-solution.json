@@ -1,0 +1,92 @@
+{
+  "solution": "UUURUULLLDDDRLUUURRRDDLDURUULDLULLDDRDRRURUULLLDURRRDLLRDDLDDRURRURULDDLLUUDDRRUULUULLDRDDURRDDLLULDRDLLRUURUUULLLDRRURDDRRDDLLLULULURRLDDRDRRRUULLDLLUUURRDDULLDDRDRLULUURRDDDRLUUUULLLLRRRRDDRRRDDDRR",
+  "moves": 199,
+  "pushes": 38,
+  "pushesByStone": [
+    9,
+    9,
+    6,
+    14
+  ],
+  "goalVacates": 0,
+  "escapeRoute": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      7,
+      4
+    ],
+    [
+      8,
+      4
+    ],
+    [
+      8,
+      5
+    ],
+    [
+      8,
+      6
+    ],
+    [
+      8,
+      7
+    ],
+    [
+      9,
+      7
+    ],
+    [
+      10,
+      7
+    ],
+    [
+      11,
+      7
+    ]
+  ],
+  "nurbiRoute": [
+    [
+      9,
+      7
+    ],
+    [
+      10,
+      7
+    ],
+    [
+      11,
+      7
+    ]
+  ]
+}

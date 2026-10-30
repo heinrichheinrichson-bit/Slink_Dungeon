@@ -1,0 +1,1 @@
+{"map":["###########","###########","##...S#.###","##S..#..###","##...#..###","###.....###","##...#..###","##..S.#####","###########","###########"],"start":{"p":[7,5],"boxes":[[6,5],[6,4],[3,3]]},"solution":"LLLDLURUUULLDDRDRUUDLLUURRDDDRRRUULDRDLLLULDRDDLLURURDUUUL","pushes":16,"lowerBound":8,"states":937,"goalVacateRequired":false}

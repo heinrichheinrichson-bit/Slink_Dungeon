@@ -1,0 +1,1 @@
+const fs=require('fs'),p='outputs/nurbis-dungeons/nur-einmal-hinueber.html';let s=fs.readFileSync(p,'utf8');const panel=s.match(/<details class="solution-guide" open>[\s\S]*?<\/details>/)[0];s=s.replace(panel,'').replace('<div class="study-links">',panel+'<div class="study-links">');fs.writeFileSync(p,s);

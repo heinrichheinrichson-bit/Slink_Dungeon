@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('work/check-break-motion.mjs');s=p.read_text(encoding='utf-8-sig').replace('{positionWoodFragment,woodStoneHeight}', '{positionWoodFragment,woodStoneHeight,fragmentOverlapTop}').replace("assert(bounds.max.z<=stoneZ-.6+1e-8,'Plank must remain below the load')", "assert(fragmentOverlapTop(mesh)<=stoneZ-.6+1e-8,'Intersecting plank surface must remain below the load')");p.write_text(s,encoding='utf-8')

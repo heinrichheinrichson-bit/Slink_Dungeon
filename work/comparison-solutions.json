@@ -1,0 +1,56 @@
+[
+  {
+    "id": "vergleich-ein-platz-auf-zeit",
+    "title": "Ein Platz auf Zeit",
+    "moves": 31,
+    "pushes": 9,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": null,
+    "friend": [
+      4,
+      6
+    ],
+    "exit": [
+      8,
+      6
+    ],
+    "solution": "DDRDRRULDLULUURDDRDDLLURRDLRRRR"
+  },
+  {
+    "id": "vergleich-die-schmale-runde",
+    "title": "Die schmale Runde",
+    "moves": 88,
+    "pushes": 23,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      4,
+      4
+    ],
+    "exit": [
+      9,
+      7
+    ],
+    "solution": "RDDDLLDLLURRRURRDDLUURUULLLDLDLDRRRURRDDLULURDRUUDLUDDLLLUURUULDDDLDRRRRLLLUURLDDRRRDRRR"
+  },
+  {
+    "id": "vergleich-erst-platz-schaffen",
+    "title": "Erst Platz schaffen",
+    "moves": 230,
+    "pushes": 36,
+    "toggles": 0,
+    "goalVacates": 2,
+    "collapseStep": null,
+    "friend": [
+      4,
+      6
+    ],
+    "exit": [
+      10,
+      7
+    ],
+    "solution": "LUURRRDDDDRDLLLLLURRRRUUUULLLDDRRLLULLDRDUURURRDDLLRRURRDLUULLLDLLDDRURUURRRDDDDDLLLLUULUURLDDRURRRLLLDDRRRRUURULULLLDURRRDDDDLLLLUURRRLLUURRRDDLLLLLURDRRRRUULLLDLDRRLUURRRDDDUUULLLDDRRURULDDLLLDDRRRDRRULUURULDLURDDDDLLURLLRRDRRRR"
+  }
+]

@@ -1,0 +1,23 @@
+const fs=require('fs'),p='outputs/nurbis-dungeons/src/study.js';let s=fs.readFileSync(p,'utf8');
+s=s.replace("selected:0,tone:","selected:1,tone:").replace("soft:55,camera:'angle',mode:'single'","soft:15,camera:'angle',mode:'mix'");
+let a=s.indexOf('if(type===5){for(let j=0;j<75;j++)'),b=s.indexOf('const t=new THREE.CanvasTexture',a);s=s.slice(0,a)+s.slice(b);
+s=s.replace('movable=false){const group','movable=false,amount=settings.soft/100){const group').replace('density=settings.soft/100','density=amount');
+s=s.replace('if(type===0){const angle','if(type===0&&density>0){const angle').replace('Math.round(12+density*40)','Math.max(1,Math.round(density*52))');
+s=s.replace('if(type===1||type===5)network','if((type===1||type===5)&&density>0)network');
+s=s.replace('if(type===2){for(let j=0;j<10+density*32;j++)','if(type===2&&density>0){for(let j=0;j<Math.max(1,Math.round(density*45));j++)');
+s=s.replace('if(type===3){network','if(type===3&&density>0){network').replace('if(rng()<.75){const xx','if(rng()<density*.75){const xx');
+s=s.replace('if(type===4){const cx','if(type===4&&density>0){const cx').replace('length=22+rng()*11','length=(22+rng()*11)*(.3+density*.9)').replace('leaves=4+Math.floor(rng()*3)','leaves=2+Math.floor(density*5+rng()*2)');
+s=s.replace('if(type===5){for(let j=0;j<4+Math.round(density*8);j++)','if(type===5&&density>0){for(let j=0;j<Math.max(1,Math.round(density*14));j++)');
+s=s.replace('37+rng()*15','(37+rng()*15)*(.28+density*.9)').replace('mycelium?3:2','density<.2?1:mycelium?3:2').replace('if(mycelium&&rng()<.7)','if(mycelium&&rng()<density*.8)');
+s=s.replace("const detail=scenes[6].content,t=settings.selected;if(settings.mode==='wall'){",String.raw`const detail=scenes[6].content,t=settings.selected;if(settings.mode==='mix'){
+const plan=[[0,0,.08,.12,0,0],[0,.12,.4,.85,.15,0],[0,.08,.55,.15,0,0],[0,0,.08,.1,0,0]];
+for(let row=0;row<4;row++)for(let col=0;col<6;col++)stone(t,193+col*739+row*1951,detail,(col-2.5)*72,(1.5-row)*72,false,plan[row][col]);
+const floor=mesh(new RoundedBoxGeometry(450,305,7,3,7),floorMat,detail);floor.position.z=-5;
+}else if(settings.mode==='wall'){`);
+s=s.replace("$('#scaleNote').textContent=settings.mode==='wall'?", "$('#scaleNote').textContent=settings.mode==='mix'?'24 Module: 13 rein · 8 fast rein · 2 mittel · 1 stark. Ruhige Flächen überwiegen.':settings.mode==='wall'?");
+s=s.replace("for(const mode of ['single','wall'])","for(const mode of ['single','wall','mix'])").replace("for(const m of ['single','wall'])","for(const m of ['single','wall','mix'])");
+s=s.replace("for(const k of ['light','grain','soft'])$('#'+k+'Value').textContent=settings[k]+' %';", "for(const k of ['light','grain','soft'])$('#'+k+'Value').textContent=settings[k]+' %';$('#soft').value=settings.soft;document.querySelectorAll('[data-density]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.density)===settings.soft)));");
+s=s.replace("$('#newPattern').onclick=", "document.querySelectorAll('[data-density]').forEach(b=>b.onclick=()=>{settings.soft=Number(b.dataset.density);if(settings.mode==='mix'){settings.mode='single';for(const m of ['single','wall','mix'])$('#'+m).setAttribute('aria-pressed',String(m==='single'));}renderAll();});\n$('#newPattern').onclick=");
+fs.writeFileSync(p,s);
+let hp='outputs/nurbis-dungeons/steinstudie.html',h=fs.readFileSync(hp,'utf8');h=h.replace('MATERIALSTUDIE 03','MATERIALSTUDIE 04').replace('value="55"','value="15"').replace('<div class="comparison">','<div class="density" aria-label="Detailstufen für jedes Material"><button data-density="0" aria-pressed="false">Rein</button><button data-density="15" aria-pressed="true">Fast rein</button><button data-density="50" aria-pressed="false">Mittel</button><button data-density="90" aria-pressed="false">Stark</button></div><div class="comparison">').replace('id="single" aria-pressed="true"','id="single" aria-pressed="false"').replace('Wand & Schiebestein</button>','Wand & Schiebestein</button><button id="mix" aria-pressed="true">Natürliche Mischung</button>');fs.writeFileSync(hp,h);
+fs.appendFileSync('outputs/nurbis-dungeons/study.css','\n.density{display:flex;gap:7px;margin:8px 0 14px}.density button{background:#242a24;border:1px solid #b6a47e55;border-radius:20px;padding:8px 18px;color:#beb9a9;font-size:12px}.density button[aria-pressed=true]{background:#d0bd94;color:#302e27}.detail .sectiontitle{flex-wrap:wrap}@media(max-width:800px){.detail .tabs{margin:8px 0}.density button{padding:8px 14px}}\n');

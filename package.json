@@ -1,0 +1,15 @@
+{
+  "name": "nurbi-dungeons",
+  "private": true,
+  "scripts": {
+    "start": "node work/serve.cjs",
+    "build": "node scripts/build.cjs",
+    "backup": "node scripts/backup.cjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  }
+}

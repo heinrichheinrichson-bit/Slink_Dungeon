@@ -1,0 +1,7 @@
+from pathlib import Path
+p=Path('outputs/nurbis-dungeons/src/dungeon-rooms.js');s=p.read_text(encoding='utf-8-sig')
+s=s.replace("const fill=box(52,48,15,6,'#8b9380',0,0,3,pit);fill.visible=false;\n traps.push({flap,fill});", "const fill=library.stone(0,73,pit,0,0,true,.08);fill.scale.set(.88,.88,.8);fill.position.z=-23.4;fill.visible=false;\n traps.push({flap,fill,cell:[x,y],dropAt:-1,dropFrom:new THREE.Vector2()});")
+s=s.replace('stone.group.position.set(...xy(p),11);});', 'stone.group.visible=true;stone.group.position.set(...xy(p),11);});\n// Filled traps consume a movable stone. Never leave its old mesh behind.\nboxMeshes.forEach((stone,i)=>{stone.group.visible=i<s.boxes.length;});')
+s=s.replace("traps.forEach(t=>{t.fill.visible=!!s.filled;t.flap.visible=!s.filled;});", "traps.forEach(t=>{t.fill.visible=!!s.filled;t.flap.visible=!s.filled;if(s.filled&&!lastState?.filled){const consumed=lastState?.boxes.find(b=>!s.boxes.some(p=>p[0]===b[0]&&p[1]===b[1]));t.dropFrom.set(consumed?(consumed[0]-t.cell[0])*72:0,consumed?(t.cell[1]-consumed[1])*72:0);t.dropAt=performance.now()/1000;}if(!s.filled){t.dropAt=-1;t.fill.position.set(0,0,-23.4);}});")
+s=s.replace("traps.forEach(trap=>{const target=", "traps.forEach(trap=>{if(trap.dropAt>=0){const a=Math.min(1,Math.max(0,(t-trap.dropAt)/.22)),u=a*a*(3-2*a);trap.fill.position.set(trap.dropFrom.x*(1-u),trap.dropFrom.y*(1-u),11+(-23.4-11)*u);if(a===1)trap.dropAt=-1;}const target=")
+p.write_text(s,encoding='utf-8')

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "geliehener-stellplatz",
+    "title": "Der geliehene Stellplatz",
+    "moves": 199,
+    "pushes": 38,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": null,
+    "friend": [
+      3,
+      5
+    ],
+    "exit": [
+      10,
+      6
+    ],
+    "solution": "DLLUUURRURRDLLLLULLDRURDDDLDRDRRUURUDLDDRUUDDLLLUUUURRURRDLLLLDDDDRRUURUDDDLLLUUUURRURRDLLRDDDDLLLUUUUULLDRURDDDLDDRRRUURUULLLULLDRURDRRRDDDDLLLLUURDRDRRUUUULLLDDLDRUUURRRDDDDLLLLRRRUDLLUULRDDRRURRRR"
+  },
+  {
+    "id": "letzte-schalterseite",
+    "title": "Die letzte Schalterseite",
+    "moves": 245,
+    "pushes": 44,
+    "toggles": 6,
+    "goalVacates": 4,
+    "collapseStep": null,
+    "friend": [
+      3,
+      5
+    ],
+    "exit": [
+      10,
+      5
+    ],
+    "solution": "URUDRDRRULUULULLDRDDRDDRRULLULUULLLURRDRDDRDRRULRDDLLURUUULLLRDDRLUURRDDLDDRRUULLLUULULLDRRRDDRRRDDLLUURUULULDLLURDRRRDDLLLUDRRRUULLLDDRRDDRRUULLLLUUULLDRRRLDDRRRRDDLLURURDULLLLUURDLDRRDRRULUULULLDDRDRLULUURRDRDDLDRUUULULDDLDRRLUURRDDLLLLRRRRRRR"
+  },
+  {
+    "id": "vor-dem-letzten-schritt",
+    "title": "Vor dem letzten Schritt",
+    "moves": 188,
+    "pushes": 41,
+    "toggles": 0,
+    "goalVacates": 2,
+    "collapseStep": 55,
+    "friend": [
+      2,
+      5
+    ],
+    "exit": [
+      10,
+      7
+    ],
+    "solution": "LLLUULLDDRRRRDRUUUDDLLLUULLUURDLDRLDDRRRRRUULDURRUULLLDLDLLUURDLDDDRRRRUURURULRDDDDDLULLLLLUUURRDDUULLDRURDLLDDRRRRRLLLLLUURRDULLDDRRRRDRRUUDDLLURURUDLDDRULUURUDLDDRULUUDDDLLLLLUDRRRRRRDRR"
+  }
+]

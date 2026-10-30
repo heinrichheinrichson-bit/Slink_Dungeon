@@ -1,0 +1,29 @@
+[
+  {
+    "id": "umparken",
+    "solvable": true,
+    "solution": "RUULUURDDLDRRRDRULUURRDLULDRDLLL",
+    "moves": 32,
+    "pushes": 13,
+    "states": 2871,
+    "requiredInsight": "No solution if occupied goals cannot be vacated."
+  },
+  {
+    "id": "wiederverwenden",
+    "solvable": true,
+    "solution": "RRULDLUUULURRRDRRUURRULLDDLLLDLLUURDLDRRRRRRLUUURRDDDDDLDDRR",
+    "moves": 60,
+    "pushes": 20,
+    "states": 3002,
+    "requiredInsight": "Steam must be covered; same stone is recovered after switch and used on seal."
+  },
+  {
+    "id": "vorbereiten",
+    "solvable": true,
+    "solution": "UUURRDLDLUUULURRRRRRURDLLLLULLLUDRRRDRRRRDDDRDLLLLLUULLDRRDRRRRRDD",
+    "moves": 66,
+    "pushes": 17,
+    "states": 9585,
+    "requiredInsight": "Seed before consuming stone, permanent bridge required, switch back required."
+  }
+]

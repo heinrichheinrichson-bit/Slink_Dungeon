@@ -1,0 +1,11 @@
+{
+  "shortestSteps": 46,
+  "pushesOnShortestRoute": 14,
+  "minimumPushes": 12,
+  "stoneManhattanDistance": 4,
+  "temptingFirstLeftPush": "irreversible deadlock",
+  "necessaryFirstRightPush": "moves away from plate",
+  "badPushAlternativesAlongSolution": 2,
+  "solution": "LLLUUURRDRUUUURULLLLLULDDLDRUURRRRDDDDLLLLLDDD",
+  "minimumPushSolution": "LLLUUURLDDRRUUUUURULLLLULDDLDRUURRRRDDDDLLLLLDDD"
+}

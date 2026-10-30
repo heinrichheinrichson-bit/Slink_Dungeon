@@ -1,0 +1,392 @@
+[
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##...S#.###",
+      "##S..#..###",
+      "##...#..###",
+      "###.....###",
+      "##...#..###",
+      "##..S.#####",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        7,
+        5
+      ],
+      "boxes": [
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    "solution": "LLLDLURUUULLDDRDRUUDLLUURRDDDRRRUULDRDLLLULDRDDLLURURDUUUL",
+    "pushes": 16,
+    "lowerBound": 8,
+    "states": 937,
+    "goalVacateRequired": false
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##.#...S###",
+      "##....#.###",
+      "##..#S..###",
+      "##..#.#####",
+      "###....S###",
+      "##...#.####",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        7,
+        6
+      ],
+      "boxes": [
+        [
+          4,
+          3
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          4
+        ]
+      ]
+    },
+    "solution": "LLLDLUULUURRURDDDUULLLDDRDRRRLUUUURRDDLRUULLDLLLDDRULURDDDRRUUUDDDLLUUURURDUR",
+    "pushes": 20,
+    "lowerBound": 6,
+    "states": 279,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "###.SS..###",
+      "##......###",
+      "###.#.#.###",
+      "##..#..S###",
+      "##....#.###",
+      "##......###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        3,
+        4
+      ],
+      "boxes": [
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          6
+        ]
+      ]
+    },
+    "solution": "DLDRDRRRRUUUUULLLLDDURRRRDDDDLLUUDDLLURDRRRUUUULLLLDDLDRDRRRRUULLUDRRDDLLUUDDLLURLUUURRURRDDDLLUUDDRRUUULLRRDDDDDLLUUUURURDD",
+    "pushes": 24,
+    "lowerBound": 10,
+    "states": 788,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##...#..###",
+      "##.##...###",
+      "##S..#..###",
+      "##.S....###",
+      "##...#.####",
+      "##....S.###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        6,
+        7
+      ],
+      "boxes": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          5,
+          7
+        ]
+      ]
+    },
+    "solution": "LLUURRURUULDDRDLLLDDRRUURUULDRDLLRDDLLULUDRDRRUULLULRDDLLDRRR",
+    "pushes": 18,
+    "lowerBound": 10,
+    "states": 554,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "###SS...###",
+      "##..#...###",
+      "###...#.###",
+      "##.#....###",
+      "##...#..###",
+      "##..S...###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        2,
+        7
+      ],
+      "boxes": [
+        [
+          4,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          3
+        ]
+      ]
+    },
+    "solution": "RRUURRDDLLUURRRUUULLDDUULLDDRDDDRRUULUUDLLUURRDDDRDDLLULLDRURURUUULLDDRDRRRUUULLLRRRDDDLLUURUL",
+    "pushes": 22,
+    "lowerBound": 8,
+    "states": 279,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##..#...###",
+      "##S.....###",
+      "##.S.##S###",
+      "####...####",
+      "###.....###",
+      "###.....###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        4,
+        3
+      ],
+      "boxes": [
+        [
+          6,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    "solution": "DLLURRRRURDLLLDDRDDRRULDLUDLUUULURRURRDLLLDDDRRULDLUULLUURDRRURRDLLLL",
+    "pushes": 27,
+    "lowerBound": 5,
+    "states": 464,
+    "goalVacateRequired": false
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##......###",
+      "###.#...###",
+      "##....SS###",
+      "###..#..###",
+      "##..S...###",
+      "##...#.####",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        7,
+        6
+      ],
+      "boxes": [
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          6
+        ]
+      ]
+    },
+    "solution": "UULLLDDDLLURDRUULURRRUULLLDDDRDDLLURDRUULURLUURRRDDDRDLLRUUUULLLDDRR",
+    "pushes": 17,
+    "lowerBound": 7,
+    "states": 583,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##.#.S#S###",
+      "##......###",
+      "###.#...###",
+      "###.....###",
+      "##...#..###",
+      "##....S.###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        5,
+        7
+      ],
+      "boxes": [
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    "solution": "LULUDLDRRRLULURRUULLDDRDDLLURDRULURLUURRRRDDDLURUULLLLDDRRRDRUUUDDLURULDLU",
+    "pushes": 21,
+    "lowerBound": 13,
+    "states": 907,
+    "goalVacateRequired": false
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##S.#...###",
+      "##..#...###",
+      "##..#.SS###",
+      "##.....####",
+      "##..#...###",
+      "##..##..###",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        3,
+        4
+      ],
+      "boxes": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    "solution": "DRRDRULLLLDDRULURRRURLDDRUULUURRDLULDRDDLLLULUURDLDDRRRRUULDRDLLLDLUUURDLDRRRDRU",
+    "pushes": 25,
+    "lowerBound": 9,
+    "states": 951,
+    "goalVacateRequired": true
+  },
+  {
+    "map": [
+      "###########",
+      "###########",
+      "##.S#...###",
+      "##.....####",
+      "##.S.#..###",
+      "###.#...###",
+      "##S.....###",
+      "###....####",
+      "###########",
+      "###########"
+    ],
+    "start": {
+      "p": [
+        2,
+        6
+      ],
+      "boxes": [
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          5
+        ]
+      ]
+    },
+    "solution": "RDRRULDLUUUUDDDRRRRUULDLDLLUUURRURDDRDDLLRRUULDLDLRURRDLLDLLUDRRULLU",
+    "pushes": 19,
+    "lowerBound": 9,
+    "states": 418,
+    "goalVacateRequired": true
+  }
+]

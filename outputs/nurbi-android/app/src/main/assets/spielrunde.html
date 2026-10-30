@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Nurbi’s Dungeons · Unter den Gärten</title><link rel="stylesheet" href="spielrunde.css"><link rel="stylesheet" href="phone.css"><link rel="stylesheet" href="control-study.css"></head>
+<body>
+<header><a class="brand" href="spielrunde.html">✿ Nurbi’s Dungeons</a><div class="header-actions"><span id="overall-progress"></span><button id="home" class="quiet" hidden>Raumübersicht</button></div></header>
+<main>
+ <section id="overview" aria-labelledby="overview-title">
+  <div class="welcome"><p class="eyebrow">WEGE ZURÜCK</p><h1 id="overview-title">Unter den Gärten.</h1><p id="overview-text"></p><button id="continue" class="primary">Spielrunde beginnen</button><p class="small">Ohne Zeitdruck · Wischen oder Nachbarfeld antippen · Jeder Zug ist rückgängig machbar</p></div>
+  <nav class="collection-filters" aria-label="Schwierigkeit"><button data-difficulty="all" aria-pressed="true">Alle</button><button data-difficulty="leicht" aria-pressed="false">Leicht</button><button data-difficulty="mittel" aria-pressed="false">Mittel</button><button data-difficulty="anspruchsvoll" aria-pressed="false">Anspruchsvoll</button><label><input type="checkbox" id="only-open"> Nur offene</label></nav>
+  <p id="filter-result" class="small" aria-live="polite"></p><p id="empty" hidden>Alle Räume dieser Auswahl sind bereits gelöst. Entferne „Nur offene“, um sie erneut zu spielen.</p>
+  <div id="room-cards" class="room-cards" aria-label="Raum auswählen"></div>
+  <p class="save-note">Deine Spielrunde wird auf diesem Gerät automatisch gespeichert. Jeder Raum bleibt frei auswählbar.</p>
+ </section>
+ <section id="play" hidden aria-label="Spielraum">
+
+  <div class="phone-heading"><button id="phone-home" class="quiet" aria-label="Zur Raumübersicht">‹</button><div><span class="eyebrow">UNTER DEN GÄRTEN</span><h1 id="title"></h1></div><button id="phone-tools" aria-label="Hilfe und Raumoptionen">☰</button></div><div class="play-layout">
+
+   <section class="game" aria-label="Spielfeld und Bewegung">
+    <div class="game-top"><span id="objective"></span><span id="moves"></span></div>
+    <div class="boardwrap"><canvas id="board" width="720" height="720" tabindex="0" aria-label="Rätsel: Wischen, ein Nachbarfeld antippen oder Pfeiltasten verwenden."></canvas><div id="win" class="win" hidden><div><p class="eyebrow">EIN FREIER WEG</p><h2 id="win-title">Gemeinsam draußen.</h2><p id="wintext"></p><button id="next" class="primary">Zum nächsten Raum</button><button id="win-overview" class="quiet">Raumübersicht</button></div></div></div>
+    <div class="toolbar"><button id="undo">↶ Rückgängig</button><button id="phone-help" class="quiet">? Lösungshilfe</button></div>
+    <div id="phone-solution" hidden><div><span id="phone-progress"></span><button id="phone-step">Nächster Zug →</button></div><button id="phone-hide-solution" aria-label="Lösungsleiste schließen">✕</button></div><p id="status" role="status"></p>
+    <div class="directions" aria-label="Bewegungssteuerung"><button data-dir="0,-1" aria-label="Nach oben">↑</button><button data-dir="-1,0" aria-label="Nach links">←</button><button data-dir="0,1" aria-label="Nach unten">↓</button><button data-dir="1,0" aria-label="Nach rechts">→</button></div>
+    <p class="small controls-note">Wischen · Nachbarfeld antippen · Steuerkreuz</p>
+   </section>
+  </div>
+ </section>
+</main><dialog id="phone-menu"><div class="menu-heading"><h2>Hilfe &amp; Raum</h2><button id="phone-close" aria-label="Menü schließen">✕</button></div>  <div class="room-bar"><label for="room-select">Raum wechseln</label><select id="room-select"></select><span id="room-label"></span></div>   <aside class="room-text"><p class="eyebrow" id="tags"></p><p id="description"></p><details><summary>Ein Gedanke für den Weg</summary><p id="hint"></p></details>
+    <details id="guide" class="solution-guide"><summary>Tester · Schrittweise Lösung</summary><p class="small">Die Testlösung lässt sich Zug für Zug ansehen. Eigenes Spielen und Rückgängig bleiben verfügbar.</p><div class="solution-buttons"><button id="solution-step">Nächster Lösungsschritt →</button><button id="solution-restart" class="quiet">Lösung von vorn</button></div><button id="phone-show-solution">Lösung am Spielfeld ansehen</button><p id="solution-progress" class="small" aria-live="polite"></p></details>
+   </aside><button id="reset">Raum neu starten</button></dialog>
+<footer><span>Eine Rätselsammlung unter Nurbi’s Garden.</span><span>Android-Test · 24 Räume · offline</span><span>Lösungshilfen in jedem Raum unter „Tester“.</span></footer>
+<script src="spielrunde.js"></script><script src="world.js"></script><script src="phone.js"></script><script src="control-study.js"></script>
+</body></html>

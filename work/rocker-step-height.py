@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('outputs/nurbis-dungeons/src/dungeon-rooms.js');s=p.read_text(encoding='utf-8-sig');s=s.replace('start=0,angle=0','start=0,fromZ=11,toZ=11,angle=0');s=s.replace('start=performance.now()/1000;\ns.boxes',"fromZ=nurbi.group.position.z;toZ=l.lever&&l.map[s.p[1]]?.[s.p[0]]==='A'?25:11;start=performance.now()/1000;\ns.boxes");s=s.replace('THREE.MathUtils.lerp(from.y,to.y,u),11);const moving','THREE.MathUtils.lerp(from.y,to.y,u),THREE.MathUtils.lerp(fromZ,toZ,u));const moving');p.write_text(s,encoding='utf-8')

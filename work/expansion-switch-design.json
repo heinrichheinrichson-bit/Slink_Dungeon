@@ -1,0 +1,54 @@
+{
+  "solution": "URUDRDRRULUULULLDRDDRDDRRULLULUULLLURRDRDDRDRRULRDDLLURUUULLLRDDRLUURRDDLDDRRUULLLUULULLDRRRDDRRRDDLLUURUULULDLLURDRRRDDLLLUDRRRUULLLDDRRDDRRUULLLLUUULLDRRRLDDRRRRDDLLURURDULLLLUURDLDRRDRRULUULULLDDRDRLULUURRDRDDLDRUUULULDDLDRRLUURRDD",
+  "pushes": 44,
+  "toggles": 6,
+  "states": 5469,
+  "A": [
+    7,
+    7
+  ],
+  "G": [
+    2,
+    3
+  ],
+  "E": [
+    7,
+    4
+  ],
+  "map": [
+    "###########",
+    "###########",
+    "##.S...####",
+    "##.......##",
+    "####..#.###",
+    "##.......##",
+    "###..#.SS##",
+    "##..#...S##",
+    "###########",
+    "###########"
+  ],
+  "start": {
+    "p": [
+      4,
+      6
+    ],
+    "boxes": [
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "map": [
+    "###########",
+    "###########",
+    "##.......##",
+    "##....S####",
+    "##..#....##",
+    "###...#..##",
+    "##.#...S.##",
+    "##S..S#..##",
+    "###########",
+    "###########"
+  ],
+  "start": {
+    "p": [
+      5,
+      7
+    ],
+    "boxes": [
+      [
+        4,
+        3
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ]
+    ]
+  },
+  "solution": "UUURUULLLDDDRLUUURRRDDLDURUULDLULLDDRDRRURUULLLDURRRDLLRDDLDDRURRURULDDLLUUDDRRUULUULLDRDDURRDDLLULDRDLLRUURUUULLLDRRURDDRRDDLLLULULURRLDDRDRRRUULLDLLUUURRDDULLDDRDRLULUURRDDDR",
+  "pushes": 38,
+  "lowerBound": 10,
+  "states": 3776,
+  "goalVacateRequired": false
+}

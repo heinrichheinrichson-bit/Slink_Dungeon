@@ -1,0 +1,254 @@
+[
+  {
+    "id": "sammlung-1",
+    "title": "Eine Handbreit Platz",
+    "moves": 24,
+    "pushes": 6,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": null,
+    "friend": [
+      2,
+      5
+    ],
+    "exit": [
+      8,
+      3
+    ],
+    "solution": "LLULUURDDLLDDRULUURRRRRR"
+  },
+  {
+    "id": "sammlung-2",
+    "title": "Zwei kleine Umwege",
+    "moves": 29,
+    "pushes": 9,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      5,
+      5
+    ],
+    "exit": [
+      8,
+      5
+    ],
+    "solution": "URRRDDDLUUURULDLLDRRRURDDLRRR"
+  },
+  {
+    "id": "sammlung-3",
+    "title": "Der freie Stellplatz",
+    "moves": 55,
+    "pushes": 10,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": null,
+    "friend": [
+      2,
+      5
+    ],
+    "exit": [
+      8,
+      6
+    ],
+    "solution": "DRRDDLLLLUURRDUURRDDDLLLRRRUULULDDURRDDLLUULLDURRRRDDRR"
+  },
+  {
+    "id": "sammlung-4",
+    "title": "Kurze Wege",
+    "moves": 41,
+    "pushes": 7,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": null,
+    "friend": [
+      4,
+      4
+    ],
+    "exit": [
+      8,
+      3
+    ],
+    "solution": "DLLLURDRRUUDDLLURDRULUUURRDLLDDRULUURRDRR"
+  },
+  {
+    "id": "sammlung-5",
+    "title": "Die kleine Kammer",
+    "moves": 38,
+    "pushes": 9,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      4,
+      4
+    ],
+    "exit": [
+      8,
+      6
+    ],
+    "solution": "LLDLLURRRLDDLLDDRULUURRDLULDDURRRDRDRR"
+  },
+  {
+    "id": "sammlung-6",
+    "title": "Drei Steine, ein Plan",
+    "moves": 69,
+    "pushes": 16,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      2,
+      4
+    ],
+    "exit": [
+      9,
+      6
+    ],
+    "solution": "LLLDLURUUULLDDRDRUUDLLUURRDDDRRRUULDRDLLLULDRDDLLURURDUUULDLRRDRRRDRR"
+  },
+  {
+    "id": "sammlung-7",
+    "title": "Verteilte Plätze",
+    "moves": 84,
+    "pushes": 21,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      4,
+      3
+    ],
+    "exit": [
+      9,
+      7
+    ],
+    "solution": "LULUDLDRRRLULURRUULLDDRDDLLURDRULURLUURRRRDDDLURUULLLLDDRRRDRUUUDDLURULDLULRRRDDDDRR"
+  },
+  {
+    "id": "sammlung-8",
+    "title": "Platz zum Ausweichen",
+    "moves": 137,
+    "pushes": 24,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": null,
+    "friend": [
+      4,
+      3
+    ],
+    "exit": [
+      9,
+      7
+    ],
+    "solution": "DLDRDRRRRUUUUULLLLDDURRRRDDDDLLUUDDLLURDRRRUUUULLLLDDLDRDRRRRUULLUDRRDDLLUUDDLLURLUUURRURRDDDLLUUDDRRUUULLRRDDDDDLLUUUURURDDULLLRDDDDRRRR"
+  },
+  {
+    "id": "sammlung-9",
+    "title": "Der gemeinsame Gang",
+    "moves": 71,
+    "pushes": 18,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": null,
+    "friend": [
+      4,
+      4
+    ],
+    "exit": [
+      9,
+      5
+    ],
+    "solution": "LLUURRURUULDDRDLLLDDRRUURUULDRDLLRDDLLULUDRDRRUULLULRDDLLDRRRLUUUDRRRRR"
+  },
+  {
+    "id": "sammlung-10",
+    "title": "Eine Frage der Reihenfolge",
+    "moves": 107,
+    "pushes": 22,
+    "toggles": 0,
+    "goalVacates": 3,
+    "collapseStep": null,
+    "friend": [
+      3,
+      4
+    ],
+    "exit": [
+      9,
+      7
+    ],
+    "solution": "RRUURRDDLLUURRRUUULLDDUULLDDRDDDRRUULUUDLLUURRDDDRDDLLULLDRURURUUULLDDRDRRRUUULLLRRRDDDLLUURULDDLLRRDRRDDRR"
+  },
+  {
+    "id": "sammlung-11",
+    "title": "Noch ein Umweg",
+    "moves": 79,
+    "pushes": 27,
+    "toggles": 0,
+    "goalVacates": 0,
+    "collapseStep": null,
+    "friend": [
+      6,
+      5
+    ],
+    "exit": [
+      9,
+      7
+    ],
+    "solution": "DLLURRRRURDLLLDDRDDRRULDLUDLUUULURRURRDLLLDDDRRULDLUULLUURDRRURRDLLLLRDDRRDRDRR"
+  },
+  {
+    "id": "sammlung-12",
+    "title": "Die freie Seite",
+    "moves": 85,
+    "pushes": 17,
+    "toggles": 0,
+    "goalVacates": 3,
+    "collapseStep": null,
+    "friend": [
+      4,
+      7
+    ],
+    "exit": [
+      9,
+      3
+    ],
+    "solution": "UULLLDDDLLURDRUULURRRUULLLDDDRDDLLURDRUULURLUURRRDDDRDLLRUUUULLLDDRRLDLDDRLUUURRURRRR"
+  },
+  {
+    "id": "sammlung-13",
+    "title": "Druck auf beiden Seiten",
+    "moves": 127,
+    "pushes": 32,
+    "toggles": 3,
+    "goalVacates": 3,
+    "collapseStep": null,
+    "friend": [
+      5,
+      3
+    ],
+    "exit": [
+      0,
+      7
+    ],
+    "solution": "LLLULDUUURRDLDDLLDDRUURUULRDDLURDRRRRDDLURULLLLULDLDDRULURRRRRDRUUDLLLLUURULLDRDDRDLUUULURRDLDDLLDDRULURRUULDDRDLUUURRLDDDLDLLL"
+  },
+  {
+    "id": "sammlung-14",
+    "title": "Die letzte feste Stelle",
+    "moves": 195,
+    "pushes": 39,
+    "toggles": 0,
+    "goalVacates": 2,
+    "collapseStep": 95,
+    "friend": [
+      4,
+      5
+    ],
+    "exit": [
+      10,
+      7
+    ],
+    "solution": "LLUUUURRULRRRDDDUULLDDLLDDRRUUUDLLUURURRDLDDLLUULURRLDDDRRUULULDDDDURRDDLLUUUURRRRDDRDDLULRUULULDDLLDDRRUULLUURRRURDDDRDLLRUUULLLLDDRRUDLLDDRRURRUUULLLULDDDDUUURRRULLRRRDDDDLLUUDLLUURRDDLRDRRRDRR"
+  }
+]

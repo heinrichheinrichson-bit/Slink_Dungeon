@@ -1,0 +1,7 @@
+# Eingänge und Ausgänge
+
+Studie: `zugangsstudie.html`. Drei Varianten: hoher Tunnelbogen, vier Stufen mit oberem Podest und offener Mauerweg mit niedrigen Fassungen. Alle Himmelsrichtungen, Schrägansicht und drei Kameraneigungen; Nurbi lässt sich hinein-/hinausbewegen oder auf dem Weg positionieren. Keine Transparenz an Bauteilen. Der hohe Tunnelbogen bleibt ausdrücklich ein Vergleich für das Verdeckungsproblem.
+
+Separates Testrätsel: `raumweg.html`. Der bestehende Kombinationsraum erhält links einen Eingang und rechts unten einen Ausgang. Vorläufig ist der offene Mauerweg eingesetzt; noch keine Variante endgültig gewählt. Nurbi kommt von außerhalb herein. Das Erreichen des Freundes setzt `rescued`, beendet den Raum aber nicht. Erst das Verlassen durch den Ausgang setzt `won`. Nurbi und Käfer gehen gemeinsam über die Raumgrenze; der Abschluss wird verzögert eingeblendet. Rückgängig nimmt auch diesen Schritt zurück. Bestehende Rätsel sind unverändert erhalten.
+
+Validierung: Build erfolgreich. Kerntest spielt den bekannten Lösungsweg bis zum Käfer, bestätigt `rescued=true`, `won=false`, geht anschließend durch den Ausgang und bestätigt den Sieg außerhalb des Gitters. Vollständiges Rückgängigmachen bis zum Anfang erfolgreich. Studie im Browser geöffnet und Seitenansicht visuell geprüft. Die abschließende komplette Browser-Spielprüfung wurde durch wiederholte Browser-Zeitüberschreitungen unterbrochen; die gesamte Ausgangsanimation ist deshalb noch nicht abschließend visuell bestätigt.

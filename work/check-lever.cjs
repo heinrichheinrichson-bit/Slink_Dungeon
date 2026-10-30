@@ -1,0 +1,11 @@
+const fs=require('fs'),assert=require('assert');(async()=>{const code=fs.readFileSync('outputs/nurbis-dungeons/src/lever-workshop-core.js','utf8'),{initial,act,hot}=await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));
+const left={...initial(),p:[6,3],boxes:[[5,4]]},snapshot=JSON.stringify(left);
+assert(!act({...left,p:[8,3]},[-1,0]).state,'Raised end must block entry');
+for(const [p,dir]of [[[7,2],[0,1]],[[7,4],[0,-1]]])assert(!act({...left,p},dir).state,'Side frame must block entry');
+let crossed=act(left,[1,0]).state;assert(crossed?.off);assert.deepEqual(crossed.p,[7,3]);assert.equal(JSON.stringify(left),snapshot,'Undo snapshot unchanged');assert(!hot(crossed));
+assert(!act(crossed,[0,1]).state,'Cannot leave the crossing sideways');assert(!act(crossed,[-1,0]).state,'Continue over newly lowered end');
+crossed=act(crossed,[1,0]).state;assert.deepEqual(crossed.p,[8,3]);assert(crossed.off);
+let back=act(crossed,[-1,0]).state;assert(back&&!back.off,'Return from new low side switches back');back=act(back,[-1,0]).state;assert.deepEqual(back.p,[6,3]);assert(!back.off);
+assert(!act({...left,boxes:[[8,3]]},[1,0]).state,'Blocked exit prevents crossing');assert(!act({...crossed,boxes:[[8,6]]},[-1,0]).state,'Cannot close slider on stone');
+assert(!act({...initial(),p:[5,3],boxes:[[6,3]]},[1,0]).state,'Crate cannot be pushed onto switch');
+const actions=[[0,-1],[1,0],[0,1],[-1,0]],key=s=>[...s.p,...s.boxes.flat(),Number(s.off)].join(',');let q=[{s:initial(),path:''}],seen=new Set([key(initial())]),solution;for(let i=0;i<q.length;i++){const {s,path}=q[i];if(s.won){solution=path;break;}for(let j=0;j<4;j++){const n=act(s,actions[j]).state;if(!n)continue;const k=key(n);if(seen.has(k))continue;seen.add(k);q.push({s:n,path:path+'URDL'[j]});}}assert(solution,'Puzzle must remain solvable');fs.writeFileSync('work/lever-solution.json',JSON.stringify({steps:solution.length,path:solution},null,2));console.log('PASS low-side entry, high/side rejection, crossing, reversible switch, obstruction checks, immutable undo and full solution.');console.log(solution.length+' actions: '+solution);})();

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "ruheplaetze",
+    "title": "Zwei freie Wege",
+    "moves": 25,
+    "pushes": 7,
+    "states": 16770,
+    "solution": "RUUUDDDLLUURRRDRRUULDUULL"
+  },
+  {
+    "id": "bretter",
+    "title": "Der leichte und der schwere Weg",
+    "moves": 11,
+    "pushes": 5,
+    "states": 856,
+    "solution": "RRULURRRDRU"
+  },
+  {
+    "id": "rueckweg",
+    "title": "Die Platte hinter dir",
+    "moves": 25,
+    "pushes": 4,
+    "states": 998,
+    "solution": "URRRRRDDRURULUUDDLLLLULLU"
+  },
+  {
+    "id": "durchgang",
+    "title": "Der Umweg zum Freund",
+    "moves": 32,
+    "pushes": 11,
+    "states": 4106,
+    "solution": "RUUULUURRULLDDRRRRURDDDLDRURRDDD"
+  },
+  {
+    "id": "druckwerk",
+    "title": "Das vergessene Druckwerk",
+    "moves": 38,
+    "pushes": 12,
+    "states": 4349,
+    "solution": "URRDRUUURUURRDDLLLLURRRDRRUULDDDDLDDRR"
+  },
+  {
+    "id": "wasser",
+    "title": "Die wandernden Wasser",
+    "moves": 31,
+    "pushes": 0,
+    "states": 146,
+    "solution": "UUURRRUURRURRDLLLLDDLLDRRDRRRRD"
+  },
+  {
+    "id": "lava",
+    "title": "Unter dem warmen Gestein",
+    "moves": 27,
+    "pushes": 0,
+    "states": 146,
+    "solution": "UUURRUURRUDLLDDLLDRRDRRRRRD"
+  },
+  {
+    "id": "riegel",
+    "title": "Zwei Wege, ein Schiebewerk",
+    "moves": 30,
+    "pushes": 0,
+    "states": 146,
+    "solution": "UURRRUURRURRDLLLLDDLLDRRDRRRRD"
+  }
+]

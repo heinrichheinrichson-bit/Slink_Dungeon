@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('outputs/nurbis-dungeons/src/garden-basins.js');s=p.read_text(encoding='utf-8-sig');s=s.replace('water.position.z=-12;', 'water.position.z=9-group.position.z;');s=s.replace('return {kind,liquid,water,level};','return {kind,liquid,water,level,fullZ:9-group.position.z};');s=s.replace('basin.water.position.z=-24+basin.level*12;','basin.water.position.z=-24+basin.level*(basin.fullZ+24);');p.write_text(s,encoding='utf-8')

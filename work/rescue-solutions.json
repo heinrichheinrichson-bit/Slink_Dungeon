@@ -1,0 +1,121 @@
+[
+  {
+    "id": "rettung1",
+    "moves": 48,
+    "pushes": 13,
+    "solution": "DDUURRRDLULDDDDUUURRDDDDLLLLRRUULULDDUUURRRRDDRR",
+    "states": 19682,
+    "escapeRoute": [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        10,
+        5
+      ]
+    ]
+  },
+  {
+    "id": "rettung2",
+    "moves": 48,
+    "pushes": 13,
+    "solution": "DDDLDRRUUURRRUULLDURRDDLLLDLLUURDDLDRRRLUURRRDRR",
+    "states": 12188,
+    "escapeRoute": [
+      [
+        6,
+        4
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        10,
+        5
+      ]
+    ]
+  },
+  {
+    "id": "rettung3",
+    "moves": 46,
+    "pushes": 13,
+    "solution": "ULDDDRDDLLURDRULLLUURURDDRRUDDRUDLDLLLURRURRRR",
+    "states": 26942,
+    "escapeRoute": [
+      [
+        6,
+        4
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        10,
+        5
+      ]
+    ]
+  }
+]
