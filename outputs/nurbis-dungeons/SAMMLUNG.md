@@ -1,3 +1,5 @@
+> Aktueller Stand: **30 Räume**. Details zur Erweiterung auf 30: [KATALOG-ERWEITERUNG-30.md](KATALOG-ERWEITERUNG-30.md). Der folgende Text beschreibt den ursprünglichen 24-Räume-Stand.
+
 # Rätselsammlung · 24 Räume
 
 Die bisherigen zehn Räume bleiben unter ihren stabilen IDs erhalten. Vierzehn neue Räume ergänzen die Sammlung auf sechs leichte, acht mittlere und zehn anspruchsvolle Rätsel. Die Einstufung ist vorläufig und muss im Testspielen beurteilt werden.

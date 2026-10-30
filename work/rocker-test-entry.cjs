@@ -21,10 +21,10 @@ var rocker_test_entry_exports = {};
 __export(rocker_test_entry_exports, {
   createRound: () => createRound,
   directions: () => directions,
-  introductions: () => introductions4,
-  rooms: () => rooms8,
+  introductions: () => introductions5,
+  rooms: () => rooms9,
   solutionStates: () => solutionStates,
-  solutions: () => solutions4
+  solutions: () => solutions5
 });
 module.exports = __toCommonJS(rocker_test_entry_exports);
 
@@ -258,106 +258,147 @@ function createFractureRescueRules(level5, start) {
   } };
 }
 
-// outputs/nurbis-dungeons/src/sammlung-collection.js
+// outputs/nurbis-dungeons/src/katalog2-collection.js
 var rooms = [];
 var solutions = [];
 var introductions = [];
 {
+  const level5 = { "difficulty": "mittel", "title": "Ein Ziel muss warten", "desc": "Drei Steine teilen sich die Zug\xE4nge zu ihren Zielpl\xE4tzen. Nicht jeder fr\xFCh erreichbare Platz sollte schon belegt bleiben.", "tags": ["Mittel", "Schieber\xE4tsel"], "hint": "Ein fertiger Zielplatz kann sp\xE4ter noch als Arbeitsfl\xE4che gebraucht werden.", "wall": 2, "floor": 1, "seed": 310010, "collection": true, "sunken": true, "rescue": true, "friend": [3, 5], "exit": [9, 7], "outside": [10, 7], "map": ["           ", " ######### ", " #..#..### ", " #S.....## ", " #.#.#.S## ", " #.F.#.S## ", " #.#....## ", " #......GO ", " ######### ", "           "] };
+  rooms.push({ id: "katalog2-mediumA", level: level5, ...createRescueRules(level5, { "p": [2, 3], "boxes": [[2, 4], [4, 4], [4, 6]] }) });
+  solutions.push("DDRRUDLLUURRRURDDDRDDLLURDRUUDDLLLUUUDLLUURRDDDDLLUUUDRRUURURDDDRDDLLURDRULLLULRDRRRDRR");
+  introductions.push("Mittel: Drei Steine teilen sich die Zug\xE4nge zu ihren Zielpl\xE4tzen. Nicht jeder fr\xFCh erreichbare Platz sollte schon belegt bleiben.");
+}
+{
+  const level5 = { "difficulty": "mittel", "title": "Die andere Seite", "desc": "Drei Steine stehen zwischen Nurbi und den n\xF6tigen Standfl\xE4chen. Plane den n\xE4chsten Seitenwechsel, bevor du den Durchgang zustellst.", "tags": ["Mittel", "Schieber\xE4tsel"], "hint": "\xDCberlege bei jedem Schieben, wie du danach hinter den n\xE4chsten Stein gelangst.", "wall": 2, "floor": 1, "seed": 310207, "collection": true, "sunken": true, "rescue": true, "friend": [5, 5], "exit": [9, 7], "outside": [10, 7], "map": ["           ", " ######### ", " ##..#..## ", " #...#..## ", " #.....S## ", " #.##F..## ", " ##.....## ", " ##.S.S.GO ", " ######### ", "           "] };
+  rooms.push({ id: "katalog2-mediumB", level: level5, ...createRescueRules(level5, { "p": [3, 4], "boxes": [[4, 4], [6, 6], [7, 3]] }) });
+  solutions.push("RRDRRULLLRRDDRDLLUUURUURDDLLLULLDRRRDRURUULDDDDRULLRRDDRR");
+  introductions.push("Mittel: Drei Steine stehen zwischen Nurbi und den n\xF6tigen Standfl\xE4chen. Plane den n\xE4chsten Seitenwechsel, bevor du den Durchgang zustellst.");
+}
+{
+  const level5 = { "difficulty": "anspruchsvoll", "title": "Vier Wege, wenig Platz", "desc": "Vier Steine teilen sich einen engen Arbeitsraum. Finde Zwischenpl\xE4tze, die den weiteren Transport nicht behindern.", "tags": ["Anspruchsvoll", "Schieber\xE4tsel"], "hint": "Plane zun\xE4chst die Standfl\xE4chen, nicht nur die Zielpl\xE4tze.", "wall": 2, "floor": 1, "seed": 310404, "collection": true, "sunken": true, "rescue": true, "friend": [4, 4], "exit": [10, 5], "outside": [11, 5], "map": ["           ", " ######### ", " #S..#...# ", " #.......# ", " #..F##### ", " #S.##...GO", " #......## ", " #..#S.S.# ", " ######### ", "           "] };
+  rooms.push({ id: "katalog2-hard1", level: level5, ...createRescueRules(level5, { "p": [6, 6], "boxes": [[3, 5], [2, 4], [5, 6], [3, 3]] }) });
+  solutions.push("LLLULUURRLLDDRUDDDLUURURUULDDDLDRRRDRRUULDRDLULLLUUURRRURRDLLLLULDDDLDRUUULDRDDRRRURDLLLLUURLDDRRRURRRR");
+  introductions.push("Anspruchsvoll: Vier Steine teilen sich einen engen Arbeitsraum. Finde Zwischenpl\xE4tze, die den weiteren Transport nicht behindern.");
+}
+{
+  const level5 = { "difficulty": "anspruchsvoll", "title": "Noch nicht am Ziel", "desc": "Vier Steine m\xFCssen aneinander vorbei. Ein belegtes Ziel ist nicht automatisch ein endg\xFCltiger Parkplatz.", "tags": ["Anspruchsvoll", "Schieber\xE4tsel"], "hint": "Pr\xFCfe, welche Wege durch einen fr\xFCh abgestellten Stein verschwinden.", "wall": 2, "floor": 1, "seed": 310601, "collection": true, "sunken": true, "rescue": true, "friend": [4, 5], "exit": [10, 6], "outside": [11, 6], "map": ["           ", " ######### ", " ##..S.S.# ", " #..##...# ", " #...S..## ", " #S#F....# ", " #..###..GO", " #......## ", " ######### ", "           "] };
+  rooms.push({ id: "katalog2-hard2", level: level5, ...createRescueRules(level5, { "p": [7, 3], "boxes": [[6, 5], [6, 4], [4, 2], [7, 4]] }) });
+  solutions.push("DDLULLLUURRRDRDLUULLLDDLDDRDRRRRUULUURRULLDDDRDDLLLLULUURRDRLULLDDRDRRRRUUUDDDLLLLULUURRDRRUUURRDLDLDLLULLDDRDRRRRUULULLRRDRDDLLLLULUUURURRRDRDLUULLLDLDDDRDRRRRUULLLULULDURURRRDRRULLDDDRUUDDLLLRRRRDRR");
+  introductions.push("Anspruchsvoll: Vier Steine m\xFCssen aneinander vorbei. Ein belegtes Ziel ist nicht automatisch ein endg\xFCltiger Parkplatz.");
+}
+{
+  const level5 = { "difficulty": "anspruchsvoll", "title": "Erst hin, dann zur\xFCck", "desc": "Die Wippe wechselt zwei Durchg\xE4nge. Steintransport und die erreichbare Eintrittsseite m\xFCssen zusammenpassen.", "tags": ["Anspruchsvoll", "Wechselgitter"], "hint": "Nach dem Umschalten brauchst du auch wieder Zugang zum tiefen Ende.", "wall": 2, "floor": 1, "seed": 310798, "collection": true, "sunken": true, "rescue": true, "switchRescue": true, "combined": true, "lever": true, "connections": [[[7, 2], [2, 2], [2, 6]], [[7, 2], [6, 2], [6, 4]]], "friend": [4, 5], "exit": [10, 7], "outside": [11, 7], "map": ["           ", " ######### ", " #..#..A.# ", " #S.....S# ", " #.#..E#.# ", " #.#FS.### ", " #G......# ", " #S.##...DO", " ######### ", "           "] };
+  rooms.push({ id: "katalog2-switch", level: level5, ...createSwitchRescueRules(level5, { "p": [8, 6], "boxes": [[3, 6], [3, 3], [5, 6], [7, 6]] }) });
+  solutions.push("DLLUUUULLLULDDURRRRDDDDRRULDLUULLDRRUUDDDRRULDLULUUUURRRDLLULDLLLDDDRRRRLULUURDURRRULLDDLLDDRRUUDDDRRULDLULLUUURURRRDLLLLLRRRRRULLDDLLDDRRUULURRLDLLDDRRRRDRR");
+  introductions.push("Anspruchsvoll: Die Wippe wechselt zwei Durchg\xE4nge. Steintransport und die erreichbare Eintrittsseite m\xFCssen zusammenpassen.");
+}
+{
+  const level5 = { "difficulty": "anspruchsvoll", "title": "Bevor der Boden fehlt", "desc": "Eine Standfl\xE4che tr\xE4gt Nurbi nur einmal. Bereite die Steinwege vor, die nach dem Einsturz nicht mehr erreichbar w\xE4ren.", "tags": ["Anspruchsvoll", "Bruchboden"], "hint": "Welche Arbeit muss auf der anderen Seite erledigt sein, bevor die Bretter brechen?", "wall": 2, "floor": 1, "seed": 310995, "collection": true, "sunken": true, "rescue": true, "weight": true, "fragileWalk": true, "friend": [4, 5], "exit": [10, 7], "outside": [11, 7], "map": ["           ", " ######### ", " #.S#...S# ", " #.......# ", " #S.#T...# ", " #..F##.## ", " #....S..# ", " #.#..#..GO", " ######### ", "           "] };
+  rooms.push({ id: "katalog2-boards", level: level5, ...createFractureRescueRules(level5, { "p": [3, 3], "boxes": [[7, 3], [7, 5], [4, 3], [6, 2]] }) });
+  solutions.push("RRURRDRDLUULLDLLDDRDRRRUDLLLULUURRURRDLLLLDDRDRRRUURULLLRRDDDLLLULUUULDDRDRDRRRUUULLLRRRDDDLLLULULUURDDURRRRDDDLLLLLUDRRRRRUUULLLLDDUURRDRULLLDDRDRRRUURULLLLRRRDDDLLLULUUDDLDRRRLULUURRRRDDDRDRR");
+  introductions.push("Anspruchsvoll: Eine Standfl\xE4che tr\xE4gt Nurbi nur einmal. Bereite die Steinwege vor, die nach dem Einsturz nicht mehr erreichbar w\xE4ren.");
+}
+
+// outputs/nurbis-dungeons/src/sammlung-collection.js
+var rooms2 = [];
+var solutions2 = [];
+var introductions2 = [];
+{
   const level5 = { "difficulty": "leicht", "title": "Eine Handbreit Platz", "desc": "Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.", "tags": ["Leicht", "Schieber\xE4tsel"], "hint": "Halte die n\xF6tigen Standfl\xE4chen frei. Ein fr\xFCh belegtes Ziel kann sp\xE4ter noch im Weg sein.", "wall": 2, "floor": 1, "seed": 298800, "collection": true, "sunken": true, "rescue": true, "friend": [2, 5], "exit": [8, 3], "outside": [9, 3], "map": ["           ", " ######### ", " ##....### ", " #.....GO  ", " #.S.##### ", " #F.S..### ", " #..#..### ", " ######### ", " ######### ", "           "] };
-  rooms.push({ id: "sammlung-1", level: level5, ...createRescueRules(level5, { "p": [6, 5], "boxes": [[4, 4], [5, 5]] }) });
-  solutions.push("LLULUURDDLLDDRULUURRRRRR");
-  introductions.push("Leicht: Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.");
+  rooms2.push({ id: "sammlung-1", level: level5, ...createRescueRules(level5, { "p": [6, 5], "boxes": [[4, 4], [5, 5]] }) });
+  solutions2.push("LLULUURDDLLDDRULUURRRRRR");
+  introductions2.push("Leicht: Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.");
 }
 {
   const level5 = { "difficulty": "leicht", "title": "Zwei kleine Umwege", "desc": "Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.", "tags": ["Leicht", "Schieber\xE4tsel"], "hint": "Halte die n\xF6tigen Standfl\xE4chen frei. Ein fr\xFCh belegtes Ziel kann sp\xE4ter noch im Weg sein.", "wall": 2, "floor": 1, "seed": 298973, "collection": true, "sunken": true, "rescue": true, "friend": [5, 5], "exit": [8, 5], "outside": [9, 5], "map": ["           ", " ######### ", " ##S..#### ", " #.....### ", " #.....### ", " ###.F.GO  ", " ##...S### ", " ######### ", " ######### ", "           "] };
-  rooms.push({ id: "sammlung-2", level: level5, ...createRescueRules(level5, { "p": [2, 4], "boxes": [[4, 5], [3, 4]] }) });
-  solutions.push("URRRDDDLUUURULDLLDRRRURDDLRRR");
-  introductions.push("Leicht: Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.");
+  rooms2.push({ id: "sammlung-2", level: level5, ...createRescueRules(level5, { "p": [2, 4], "boxes": [[4, 5], [3, 4]] }) });
+  solutions2.push("URRRDDDLUUURULDLLDRRRURDDLRRR");
+  introductions2.push("Leicht: Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.");
 }
 {
   const level5 = { "difficulty": "leicht", "title": "Der freie Stellplatz", "desc": "Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.", "tags": ["Leicht", "Schieber\xE4tsel"], "hint": "Halte die n\xF6tigen Standfl\xE4chen frei. Ein fr\xFCh belegtes Ziel kann sp\xE4ter noch im Weg sein.", "wall": 2, "floor": 1, "seed": 299146, "collection": true, "sunken": true, "rescue": true, "friend": [2, 5], "exit": [8, 6], "outside": [9, 6], "map": ["           ", " ######### ", " #..###### ", " #.#...### ", " #.....### ", " #F#.#.### ", " #SS...GO  ", " ######### ", " ######### ", "           "] };
-  rooms.push({ id: "sammlung-3", level: level5, ...createRescueRules(level5, { "p": [4, 3], "boxes": [[4, 4], [3, 4]] }) });
-  solutions.push("DRRDDLLLLUURRDUURRDDDLLLRRRUULULDDURRDDLLUULLDURRRRDDRR");
-  introductions.push("Leicht: Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.");
+  rooms2.push({ id: "sammlung-3", level: level5, ...createRescueRules(level5, { "p": [4, 3], "boxes": [[4, 4], [3, 4]] }) });
+  solutions2.push("DRRDDLLLLUURRDUURRDDDLLLRRRUULULDDURRDDLLUULLDURRRRDDRR");
+  introductions2.push("Leicht: Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.");
 }
 {
   const level5 = { "difficulty": "leicht", "title": "Kurze Wege", "desc": "Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.", "tags": ["Leicht", "Schieber\xE4tsel"], "hint": "Halte die n\xF6tigen Standfl\xE4chen frei. Ein fr\xFCh belegtes Ziel kann sp\xE4ter noch im Weg sein.", "wall": 2, "floor": 1, "seed": 299319, "collection": true, "sunken": true, "rescue": true, "friend": [4, 4], "exit": [8, 3], "outside": [9, 3], "map": ["           ", " ######### ", " #.....### ", " #.S.S.GO  ", " ###F.#### ", " #....#### ", " #....#### ", " ######### ", " ######### ", "           "] };
-  rooms.push({ id: "sammlung-4", level: level5, ...createRescueRules(level5, { "p": [5, 5], "boxes": [[3, 5], [5, 4]] }) });
-  solutions.push("DLLLURDRRUUDDLLURDRULUUURRDLLDDRULUURRDRR");
-  introductions.push("Leicht: Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.");
+  rooms2.push({ id: "sammlung-4", level: level5, ...createRescueRules(level5, { "p": [5, 5], "boxes": [[3, 5], [5, 4]] }) });
+  solutions2.push("DLLLURDRRUUDDLLURDRULUUURRDLLDDRULUURRDRR");
+  introductions2.push("Leicht: Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.");
 }
 {
   const level5 = { "difficulty": "leicht", "title": "Die kleine Kammer", "desc": "Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.", "tags": ["Leicht", "Schieber\xE4tsel"], "hint": "Halte die n\xF6tigen Standfl\xE4chen frei. Ein fr\xFCh belegtes Ziel kann sp\xE4ter noch im Weg sein.", "wall": 2, "floor": 1, "seed": 299492, "collection": true, "sunken": true, "rescue": true, "friend": [4, 4], "exit": [8, 6], "outside": [9, 6], "map": ["           ", " ######### ", " #....S### ", " #...#.### ", " #..F.#### ", " #..#..### ", " #S..#.GO  ", " ######### ", " ######### ", "           "] };
-  rooms.push({ id: "sammlung-5", level: level5, ...createRescueRules(level5, { "p": [6, 2], "boxes": [[5, 2], [3, 5]] }) });
-  solutions.push("LLDLLURRRLDDLLDDRULUURRDLULDDURRRDRDRR");
-  introductions.push("Leicht: Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.");
+  rooms2.push({ id: "sammlung-5", level: level5, ...createRescueRules(level5, { "p": [6, 2], "boxes": [[5, 2], [3, 5]] }) });
+  solutions2.push("LLDLLURRRLDDLLDDRULUURRDLULDDURRRDRDRR");
+  introductions2.push("Leicht: Zwei Steine brauchen freie Standfl\xE4chen. \xD6ffne den gemeinsamen Weg f\xFCr Nurbi und seinen Freund.");
 }
 {
   const level5 = { "difficulty": "mittel", "title": "Drei Steine, ein Plan", "desc": "Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.", "tags": ["Mittel", "Schieber\xE4tsel"], "hint": "Halte die n\xF6tigen Standfl\xE4chen frei. Ein fr\xFCh belegtes Ziel kann sp\xE4ter noch im Weg sein.", "wall": 2, "floor": 1, "seed": 299665, "collection": true, "sunken": true, "rescue": true, "friend": [2, 4], "exit": [9, 6], "outside": [10, 6], "map": ["           ", " ######### ", " #...S#.## ", " #S..#..## ", " #F..#..## ", " ##.....## ", " #...#..GO ", " #..S.#### ", " ######### ", "           "] };
-  rooms.push({ id: "sammlung-6", level: level5, ...createRescueRules(level5, { "p": [7, 5], "boxes": [[6, 5], [6, 4], [3, 3]] }) });
-  solutions.push("LLLDLURUUULLDDRDRUUDLLUURRDDDRRRUULDRDLLLULDRDDLLURURDUUULDLRRDRRRDRR");
-  introductions.push("Mittel: Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.");
+  rooms2.push({ id: "sammlung-6", level: level5, ...createRescueRules(level5, { "p": [7, 5], "boxes": [[6, 5], [6, 4], [3, 3]] }) });
+  solutions2.push("LLLDLURUUULLDDRDRUUDLLUURRDDDRRRUULDRDLLLULDRDDLLURURDUUULDLRRDRRRDRR");
+  introductions2.push("Mittel: Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.");
 }
 {
   const level5 = { "difficulty": "mittel", "title": "Verteilte Pl\xE4tze", "desc": "Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.", "tags": ["Mittel", "Schieber\xE4tsel"], "hint": "Halte die n\xF6tigen Standfl\xE4chen frei. Ein fr\xFCh belegtes Ziel kann sp\xE4ter noch im Weg sein.", "wall": 2, "floor": 1, "seed": 299838, "collection": true, "sunken": true, "rescue": true, "friend": [4, 3], "exit": [9, 7], "outside": [10, 7], "map": ["           ", " ######### ", " #.#.S#S## ", " #..F...## ", " ##.#...## ", " ##.....## ", " #...#..## ", " #....S.GO ", " ######### ", "           "] };
-  rooms.push({ id: "sammlung-7", level: level5, ...createRescueRules(level5, { "p": [5, 7], "boxes": [[3, 5], [4, 7], [4, 5]] }) });
-  solutions.push("LULUDLDRRRLULURRUULLDDRDDLLURDRULURLUURRRRDDDLURUULLLLDDRRRDRUUUDDLURULDLULRRRDDDDRR");
-  introductions.push("Mittel: Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.");
+  rooms2.push({ id: "sammlung-7", level: level5, ...createRescueRules(level5, { "p": [5, 7], "boxes": [[3, 5], [4, 7], [4, 5]] }) });
+  solutions2.push("LULUDLDRRRLULURRUULLDDRDDLLURDRULURLUURRRRDDDLURUULLLLDDRRRDRUUUDDLURULDLULRRRDDDDRR");
+  introductions2.push("Mittel: Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.");
 }
 {
   const level5 = { "difficulty": "mittel", "title": "Platz zum Ausweichen", "desc": "Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.", "tags": ["Mittel", "Schieber\xE4tsel"], "hint": "Halte die n\xF6tigen Standfl\xE4chen frei. Ein fr\xFCh belegtes Ziel kann sp\xE4ter noch im Weg sein.", "wall": 2, "floor": 1, "seed": 300011, "collection": true, "sunken": true, "rescue": true, "friend": [4, 3], "exit": [9, 7], "outside": [10, 7], "map": ["           ", " ######### ", " ##.SS..## ", " #..F...## ", " ##.#.#.## ", " #..#..S## ", " #....#.## ", " #......GO ", " ######### ", "           "] };
-  rooms.push({ id: "sammlung-8", level: level5, ...createRescueRules(level5, { "p": [3, 4], "boxes": [[3, 5], [3, 3], [5, 6]] }) });
-  solutions.push("DLDRDRRRRUUUUULLLLDDURRRRDDDDLLUUDDLLURDRRRUUUULLLLDDLDRDRRRRUULLUDRRDDLLUUDDLLURLUUURRURRDDDLLUUDDRRUUULLRRDDDDDLLUUUURURDDULLLRDDDDRRRR");
-  introductions.push("Mittel: Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.");
+  rooms2.push({ id: "sammlung-8", level: level5, ...createRescueRules(level5, { "p": [3, 4], "boxes": [[3, 5], [3, 3], [5, 6]] }) });
+  solutions2.push("DLDRDRRRRUUUUULLLLDDURRRRDDDDLLUUDDLLURDRRRUUUULLLLDDLDRDRRRRUULLUDRRDDLLUUDDLLURLUUURRURRDDDLLUUDDRRUUULLRRDDDDDLLUUUURURDDULLLRDDDDRRRR");
+  introductions2.push("Mittel: Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.");
 }
 {
   const level5 = { "difficulty": "mittel", "title": "Der gemeinsame Gang", "desc": "Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.", "tags": ["Mittel", "Schieber\xE4tsel"], "hint": "Halte die n\xF6tigen Standfl\xE4chen frei. Ein fr\xFCh belegtes Ziel kann sp\xE4ter noch im Weg sein.", "wall": 2, "floor": 1, "seed": 300184, "collection": true, "sunken": true, "rescue": true, "friend": [4, 4], "exit": [9, 5], "outside": [10, 5], "map": ["           ", " ######### ", " #...#..## ", " #.##...## ", " #S.F#..## ", " #.S....GO ", " #...#.### ", " #....S.## ", " ######### ", "           "] };
-  rooms.push({ id: "sammlung-9", level: level5, ...createRescueRules(level5, { "p": [6, 7], "boxes": [[6, 6], [6, 3], [5, 7]] }) });
-  solutions.push("LLUURRURUULDDRDLLLDDRRUURUULDRDLLRDDLLULUDRDRRUULLULRDDLLDRRRLUUUDRRRRR");
-  introductions.push("Mittel: Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.");
+  rooms2.push({ id: "sammlung-9", level: level5, ...createRescueRules(level5, { "p": [6, 7], "boxes": [[6, 6], [6, 3], [5, 7]] }) });
+  solutions2.push("LLUURRURUULDDRDLLLDDRRUURUULDRDLLRDDLLULUDRDRRUULLULRDDLLDRRRLUUUDRRRRR");
+  introductions2.push("Mittel: Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.");
 }
 {
   const level5 = { "difficulty": "mittel", "title": "Eine Frage der Reihenfolge", "desc": "Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.", "tags": ["Mittel", "Schieber\xE4tsel"], "hint": "Halte die n\xF6tigen Standfl\xE4chen frei. Ein fr\xFCh belegtes Ziel kann sp\xE4ter noch im Weg sein.", "wall": 2, "floor": 1, "seed": 300357, "collection": true, "sunken": true, "rescue": true, "friend": [3, 4], "exit": [9, 7], "outside": [10, 7], "map": ["           ", " ######### ", " ##SS...## ", " #..#...## ", " ##F..#.## ", " #.#....## ", " #...#..## ", " #..S...GO ", " ######### ", "           "] };
-  rooms.push({ id: "sammlung-10", level: level5, ...createRescueRules(level5, { "p": [2, 7], "boxes": [[4, 6], [3, 7], [5, 3]] }) });
-  solutions.push("RRUURRDDLLUURRRUUULLDDUULLDDRDDDRRUULUUDLLUURRDDDRDDLLULLDRURURUUULLDDRDRRRUUULLLRRRDDDLLUURULDDLLRRDRRDDRR");
-  introductions.push("Mittel: Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.");
+  rooms2.push({ id: "sammlung-10", level: level5, ...createRescueRules(level5, { "p": [2, 7], "boxes": [[4, 6], [3, 7], [5, 3]] }) });
+  solutions2.push("RRUURRDDLLUURRRUUULLDDUULLDDRDDDRRUULUUDLLUURRDDDRDDLLULLDRURURUUULLDDRDRRRUUULLLRRRDDDLLUURULDDLLRRDRRDDRR");
+  introductions2.push("Mittel: Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.");
 }
 {
   const level5 = { "difficulty": "mittel", "title": "Noch ein Umweg", "desc": "Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.", "tags": ["Mittel", "Schieber\xE4tsel"], "hint": "Halte die n\xF6tigen Standfl\xE4chen frei. Ein fr\xFCh belegtes Ziel kann sp\xE4ter noch im Weg sein.", "wall": 2, "floor": 1, "seed": 300530, "collection": true, "sunken": true, "rescue": true, "friend": [6, 5], "exit": [9, 7], "outside": [10, 7], "map": ["           ", " ######### ", " #..#...## ", " #S.....## ", " #.S.##S## ", " ###..F### ", " ##.....## ", " ##.....GO ", " ######### ", "           "] };
-  rooms.push({ id: "sammlung-11", level: level5, ...createRescueRules(level5, { "p": [4, 3], "boxes": [[6, 6], [3, 3], [4, 4]] }) });
-  solutions.push("DLLURRRRURDLLLDDRDDRRULDLUDLUUULURRURRDLLLDDDRRULDLUULLUURDRRURRDLLLLRDDRRDRDRR");
-  introductions.push("Mittel: Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.");
+  rooms2.push({ id: "sammlung-11", level: level5, ...createRescueRules(level5, { "p": [4, 3], "boxes": [[6, 6], [3, 3], [4, 4]] }) });
+  solutions2.push("DLLURRRRURDLLLDDRDDRRULDLUDLUUULURRURRDLLLDDDRRULDLUULLUURDRRURRDLLLLRDDRRDRDRR");
+  introductions2.push("Mittel: Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.");
 }
 {
   const level5 = { "difficulty": "mittel", "title": "Die freie Seite", "desc": "Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.", "tags": ["Mittel", "Schieber\xE4tsel"], "hint": "Halte die n\xF6tigen Standfl\xE4chen frei. Ein fr\xFCh belegtes Ziel kann sp\xE4ter noch im Weg sein.", "wall": 2, "floor": 1, "seed": 300703, "collection": true, "sunken": true, "rescue": true, "friend": [4, 7], "exit": [9, 3], "outside": [10, 3], "map": ["           ", " ######### ", " #......## ", " ##.#...GO ", " #....SS## ", " ##..#..## ", " #..S...## ", " #..F#.### ", " ######### ", "           "] };
-  rooms.push({ id: "sammlung-12", level: level5, ...createRescueRules(level5, { "p": [7, 6], "boxes": [[3, 6], [3, 4], [6, 6]] }) });
-  solutions.push("UULLLDDDLLURDRUULURRRUULLLDDDRDDLLURDRUULURLUURRRDDDRDLLRUUUULLLDDRRLDLDDRLUUURRURRRR");
-  introductions.push("Mittel: Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.");
+  rooms2.push({ id: "sammlung-12", level: level5, ...createRescueRules(level5, { "p": [7, 6], "boxes": [[3, 6], [3, 4], [6, 6]] }) });
+  solutions2.push("UULLLDDDLLURDRUULURRRUULLLDDDRDDLLURDRUULURLUURRRDDDRDLLRUUUULLLDDRRLDLDDRLUUURRURRRR");
+  introductions2.push("Mittel: Drei Steine teilen sich den Raum. Plane Zwischenpl\xE4tze und die Reihenfolge bis zum freien Ausgang.");
 }
 {
   const level5 = { "difficulty": "anspruchsvoll", "title": "Druck auf beiden Seiten", "desc": "Vier Steine und wechselnde Durchg\xE4nge. Behalte beide Seiten der Wippe im Blick.", "tags": ["Anspruchsvoll", "Wippe"], "hint": "Halte die n\xF6tigen Standfl\xE4chen frei. Ein fr\xFCh belegtes Ziel kann sp\xE4ter noch im Weg sein.", "wall": 2, "floor": 1, "seed": 300876, "collection": true, "sunken": true, "rescue": true, "switchRescue": true, "combined": true, "lever": true, "connections": [[[4, 2], [2, 2], [2, 5]], [[4, 2], [5, 2], [5, 6]]], "friend": [5, 3], "exit": [0, 7], "outside": [-1, 7], "map": ["           ", " ######### ", " #..A.#..# ", " #S..F#.S# ", " ##..#.#.# ", " #G..S...# ", " #S..E#..# ", "OD..#.#..# ", " ######### ", "           "] };
-  rooms.push({ id: "sammlung-13", level: level5, ...createSwitchRescueRules(level5, { "p": [7, 5], "boxes": [[7, 6], [4, 6], [6, 5], [4, 4]] }) });
-  solutions.push("LLLULDUUURRDLDDLLDDRUURUULRDDLURDRRRRDDLURULLLLULDLDDRULURRRRRDRUUDLLLLUURULLDRDDRDLUUULURRDLDDLLDDRULURRUULDDRDLUUURRLDDDLDLLL");
-  introductions.push("Anspruchsvoll: Vier Steine und wechselnde Durchg\xE4nge. Behalte beide Seiten der Wippe im Blick.");
+  rooms2.push({ id: "sammlung-13", level: level5, ...createSwitchRescueRules(level5, { "p": [7, 5], "boxes": [[7, 6], [4, 6], [6, 5], [4, 4]] }) });
+  solutions2.push("LLLULDUUURRDLDDLLDDRUURUULRDDLURDRRRRDDLURULLLLULDLDDRULURRRRRDRUUDLLLLUURULLDRDDRDLUUULURRDLDDLLDDRULURRUULDDRDLUUURRLDDDLDLLL");
+  introductions2.push("Anspruchsvoll: Vier Steine und wechselnde Durchg\xE4nge. Behalte beide Seiten der Wippe im Blick.");
 }
 {
   const level5 = { "difficulty": "anspruchsvoll", "title": "Die letzte feste Stelle", "desc": "Vier Steine und eine verg\xE4ngliche Standfl\xE4che. Bereite die Wege vor, bevor die Bretter nachgeben.", "tags": ["Anspruchsvoll", "Bruchboden"], "hint": "Halte die n\xF6tigen Standfl\xE4chen frei. Ein fr\xFCh belegtes Ziel kann sp\xE4ter noch im Weg sein.", "wall": 2, "floor": 1, "seed": 301049, "collection": true, "sunken": true, "rescue": true, "weight": true, "fragileWalk": true, "friend": [4, 5], "exit": [10, 7], "outside": [11, 7], "map": ["           ", " ######### ", " #.S.....# ", " #....S.## ", " ##.#.T.## ", " ##.F.#..# ", " #..#....# ", " #SS..#..GO", " ######### ", "           "] };
-  rooms.push({ id: "sammlung-14", level: level5, ...createFractureRescueRules(level5, { "p": [5, 7], "boxes": [[6, 6], [4, 2], [7, 4], [5, 6]] }) });
-  solutions.push("LLUUUURRULRRRDDDUULLDDLLDDRRUUUDLLUURURRDLDDLLUULURRLDDDRRUULULDDDDURRDDLLUUUURRRRDDRDDLULRUULULDDLLDDRRUULLUURRRURDDDRDLLRUUULLLLDDRRUDLLDDRRURRUUULLLULDDDDUUURRRULLRRRDDDDLLUUDLLUURRDDLRDRRRDRR");
-  introductions.push("Anspruchsvoll: Vier Steine und eine verg\xE4ngliche Standfl\xE4che. Bereite die Wege vor, bevor die Bretter nachgeben.");
+  rooms2.push({ id: "sammlung-14", level: level5, ...createFractureRescueRules(level5, { "p": [5, 7], "boxes": [[6, 6], [4, 2], [7, 4], [5, 6]] }) });
+  solutions2.push("LLUUUURRULRRRDDDUULLDDLLDDRRUUUDLLUURURRDLDDLLUULURRLDDDRRUULULDDDDURRDDLLUUUURRRRDDRDDLULRUULULDDLLDDRRUULLUURRRURDDDRDLLRUUULLLLDDRRUDLLDDRRURRUUULLLULDDDDUUURRRULLRRRDDDDLLUUDLLUURRDDLRDRRRDRR");
+  introductions2.push("Anspruchsvoll: Vier Steine und eine verg\xE4ngliche Standfl\xE4che. Bereite die Wege vor, bevor die Bretter nachgeben.");
 }
 
 // outputs/nurbis-dungeons/src/interlock-collection.js
 var level = { "title": "Verzahnte Wege", "desc": "Vier Druckplatten halten den Ausgang offen. Erreiche den verirrten Gartenfreund und finde f\xFCr euch beide einen freien Weg hinaus.", "tags": ["Vier Steine", "Engstellen", "Rettungsweg"], "hint": "Die Schalter sind sichtbar. Entscheidend ist, welche Seite jedes Steins du sp\xE4ter noch erreichen kannst.", "wall": 2, "floor": 1, "seed": 28264, "collection": true, "sunken": true, "rescue": true, "friend": [1, 2], "exit": [10, 7], "outside": [11, 7], "map": ["           ", " ######### ", " F.......# ", " #....S### ", " #..#....# ", " ##...#..# ", " #.#...S.# ", " #S..S#..GO", " ######### ", "           "] };
-var rooms2 = [{ id: "verzahnte-wege", level, ...createRescueRules(level, { "p": [5, 7], "boxes": [[4, 3], [6, 4], [4, 5], [5, 6]] }) }];
+var rooms3 = [{ id: "verzahnte-wege", level, ...createRescueRules(level, { "p": [5, 7], "boxes": [[4, 3], [6, 4], [4, 5], [5, 6]] }) }];
 
 // outputs/nurbis-dungeons/src/counterflow-collection.js
 var level2 = { "title": "Gegenl\xE4ufig", "desc": "Vier Steine halten den Ausgang offen. Die Bodenwippe \xF6ffnet abwechselnd zwei innere Durchg\xE4nge. Finde den Freund und bereite euren freien Weg nach drau\xDFen vor.", "tags": ["Vier Steine", "Richtungswippe", "Wechselgitter"], "hint": "Ein offener Durchgang allein hilft nicht. \xDCberlege vor jedem Umschalten, welche Steine bereits auf der anderen Seite stehen m\xFCssen \u2013 und wie du wieder zum tiefen Ende der Wippe kommst.", "wall": 2, "floor": 1, "seed": 284257, "collection": true, "sunken": true, "rescue": true, "switchRescue": true, "combined": true, "lever": true, "friend": [2, 2], "exit": [10, 4], "outside": [11, 4], "connections": [[[3, 4], [4, 4], [5, 4], [6, 4], [7, 4]], [[3, 4], [4, 4], [4, 5]]], "map": ["           ", " ######### ", " #F..#.SS# ", " #.......# ", " #.A..#G.DO", " #..E#S.S# ", " ###.....# ", " #....#### ", " ######### ", "           "] };
-var rooms3 = [{ id: "gegenlaeufig", level: level2, ...createSwitchRescueRules(level2, { "p": [7, 3], "boxes": [[7, 6], [4, 4], [5, 6], [6, 3]] }) }];
+var rooms4 = [{ id: "gegenlaeufig", level: level2, ...createSwitchRescueRules(level2, { "p": [7, 3], "boxes": [[7, 6], [4, 4], [5, 6], [6, 3]] }) }];
 
 // outputs/nurbis-dungeons/src/fracture-collection.js
 var level3 = { "title": "Nur einmal hin\xFCber", "desc": "Vier Steine \xF6ffnen den Ausgang. Die morschen Bretter tragen Nurbi noch einmal und brechen beim Verlassen ein. Bereite die Steinpl\xE4tze vor und rette den Gartenfreund \xFCber festen Boden.", "tags": ["Vier Steine", "Morsche Bretter", "Verlorene Standfl\xE4che"], "hint": "Nicht nur der Transportweg z\xE4hlt. Nach dem Einsturz kannst du auf diesem Feld auch nicht mehr stehen, um einen benachbarten Stein zu schieben.", "wall": 2, "floor": 1, "seed": 785643, "collection": true, "sunken": true, "rescue": true, "weight": true, "fragileWalk": true, "friend": [2, 4], "exit": [10, 5], "outside": [11, 5], "map": ["           ", " ######### ", " #...#TS.# ", " ##..#..## ", " #F....S.# ", " #..S#...GO", " #S#.##..# ", " #.#.#...# ", " ######### ", "           "] };
-var rooms4 = [{ id: "nur-einmal-hinueber", level: level3, ...createFractureRescueRules(level3, { "p": [7, 2], "boxes": [[4, 4], [7, 3], [3, 3], [6, 4]] }) }];
+var rooms5 = [{ id: "nur-einmal-hinueber", level: level3, ...createFractureRescueRules(level3, { "p": [7, 2], "boxes": [[4, 4], [7, 3], [3, 3], [6, 4]] }) }];
 
 // outputs/nurbis-dungeons/src/water-rescue-rules.js
 function createWaterRescueRules(level5, start) {
@@ -457,7 +498,7 @@ function createWaterRescueRules(level5, start) {
 
 // outputs/nurbis-dungeons/src/basin-room-collection.js
 var level4 = { "title": "Wechselnde Ufer", "desc": "Vier Steine \xF6ffnen den Ausgang. Die Wippe verlagert das Wasser zwischen zwei Becken. Nutze das trockene Becken zum Rangieren und bereite f\xFCr den Freund einen begehbaren Fluchtweg vor.", "tags": ["Vier Steine", "Wasserwechsel", "Zwei Becken"], "hint": "Ein Stein kann im Becken auf seinen n\xE4chsten Einsatz warten. Nach dem Fluten erreichst du ihn erst wieder, wenn dieses Becken trocken liegt.", "wall": 2, "floor": 1, "seed": 282889, "collection": true, "sunken": true, "rescue": true, "water": true, "waterRescue": true, "lever": true, "basinMount": "flush", "liquidType": "water", "friend": [1, 8], "exit": [11, 7], "outside": [12, 7], "connections": [[[2, 5], [4, 5], [4, 3]], [[2, 5], [4, 5], [4, 6]]], "map": ["            ", "########### ", "#S.####.#S# ", "#...UUU.S.# ", "#..####...# ", "#.A.#####.# ", "#...WWW...# ", "#..S###...GO", "#F..###...# ", "########### ", "            "] };
-var rooms5 = [{ id: "wechselnde-ufer", level: level4, ...createWaterRescueRules(level4, { "p": [1, 5], "boxes": [[4, 6], [8, 7], [8, 6], [2, 3]] }) }];
+var rooms6 = [{ id: "wechselnde-ufer", level: level4, ...createWaterRescueRules(level4, { "p": [1, 5], "boxes": [[4, 6], [8, 7], [8, 6], [2, 3]] }) }];
 
 // outputs/nurbis-dungeons/src/interlock-solution.js
 var solution = "UUURUULLLDDDRLUUURRRDDLDURUULDLULLDDRDRRURUULLLDURRRDLLRDDLDDRURRURULDDLLUUDDRRUULUULLDRDDURRDDLLULDRDLLRUURUUULLLDRRURDDRRDDLLLULULURRLDDRDRRRUULLDLLUUURRDDULLDDRDRLULUURRDDDRLUUUULLLLRRRRDDRRRDDDRR";
@@ -472,70 +513,71 @@ var solution3 = "DDDLULLDLLURRRRLLUULDDRRRDRRULLLLRRRRDDDLURUULLLLDLULDURRRRRUUL
 var solution4 = "DRRRRLLLLUUURDLDRRDLLUUURRRRRRDRRDDDDLLUURLDDRRUUUUUDLLULLLLLDLDDRRULLDRRRRRRDDRRUULLLLLLLDLUUUUDDDRRRRRRDDRURULLLLLLDLLURLURRDLDDLUUUUURRRRRRDRRDDDRR";
 
 // outputs/nurbis-dungeons/src/expansion-collection.js
-var rooms6 = [];
-var solutions2 = [];
-var introductions2 = [];
-{
-  const level5 = { "title": "Der geliehene Stellplatz", "desc": "Vier Steine brauchen dieselben schmalen Arbeitswege. Belege die Druckplatten so, dass auch der Gartenfreund zum Ausgang gelangt.", "tags": ["Rangierfl\xE4che", "Vier Steine"], "hint": "Auch ein bereits belegtes Ziel kann vor\xFCbergehend als Arbeitsfl\xE4che gebraucht werden.", "wall": 2, "floor": 1, "seed": 298800, "collection": true, "sunken": true, "rescue": true, "friend": [3, 5], "exit": [10, 6], "outside": [11, 6], "map": ["           ", " ######### ", " #...#...# ", " #.......# ", " ###.##.## ", " #.F.#S.S# ", " ##..S...GO", " #S.....## ", " ######### ", "           "] };
-  rooms6.push({ id: "geliehener-stellplatz", level: level5, ...createRescueRules(level5, { "p": [6, 5], "boxes": [[7, 6], [7, 4], [5, 3], [7, 5]] }) });
-  solutions2.push("DLLUUURRURRDLLLLULLDRURDDDLDRDRRUURUDLDDRUUDDLLLUUUURRURRDLLLLDDDDRRUURUDDDLLLUUUURRURRDLLRDDDDLLLUUUUULLDRURDDDLDDRRRUURUULLLULLDRURDRRRDDDDLLLLUURDRDRRUUUULLLDDLDRUUURRRDDDDLLLLRRRUDLLUULRDDRRURRRR");
-  introductions2.push("Vier Steine brauchen dieselben schmalen Arbeitswege. Belege die Druckplatten so, dass auch der Gartenfreund zum Ausgang gelangt.");
-}
-{
-  const level5 = { "title": "Die letzte Schalterseite", "desc": "Die Wippe wechselt zwei Durchg\xE4nge. Behalte Zugang zu ihrem tiefen Ende, w\xE4hrend du die Steine an ihre Pl\xE4tze bringst.", "tags": ["Schalterseiten", "Wechselgitter"], "hint": "\xDCberlege vor dem endg\xFCltigen Abstellen jedes Steins, von wo du die Wippe noch erreichen und \xFCberqueren kannst.", "wall": 2, "floor": 1, "seed": 298973, "collection": true, "sunken": true, "rescue": true, "switchRescue": true, "combined": true, "lever": true, "connections": [[[7, 7], [2, 7], [2, 3]], [[7, 7], [7, 4]]], "friend": [3, 5], "exit": [10, 5], "outside": [11, 5], "map": ["           ", " ######### ", " #.S...### ", " #G......# ", " ###..#E## ", " #.F.....DO", " ##..#.SS# ", " #..#..AS# ", " ######### ", "           "] };
-  rooms6.push({ id: "letzte-schalterseite", level: level5, ...createSwitchRescueRules(level5, { "p": [4, 6], "boxes": [[4, 2], [5, 4], [6, 5], [4, 5]] }) });
-  solutions2.push("URUDRDRRULUULULLDRDDRDDRRULLULUULLLURRDRDDRDRRULRDDLLURUUULLLRDDRLUURRDDLDDRRUULLLUULULLDRRRDDRRRDDLLUURUULULDLLURDRRRDDLLLUDRRRUULLLDDRRDDRRUULLLLUUULLDRRRLDDRRRRDDLLURURDULLLLUURDLDRRDRRULUULULLDDRDRLULUURRDRDDLDRUUULULDDLDRRLUURRDDLLLLRRRRRRR");
-  introductions2.push("Die Wippe wechselt zwei Durchg\xE4nge. Behalte Zugang zu ihrem tiefen Ende, w\xE4hrend du die Steine an ihre Pl\xE4tze bringst.");
-}
-{
-  const level5 = { "title": "Vor dem letzten Schritt", "desc": "Ein morsches Feld tr\xE4gt Nurbi nur einmal. Bereite die oberen Steinpl\xE4tze vor und finde danach den sicheren gemeinsamen Weg hinaus.", "tags": ["Vorbereiten", "Morsche Bretter"], "hint": "Was du nach dem Einbrechen noch verschieben musst, braucht erreichbare Standfl\xE4chen auf festem Boden.", "wall": 2, "floor": 1, "seed": 299146, "collection": true, "sunken": true, "rescue": true, "weight": true, "fragileWalk": true, "friend": [2, 5], "exit": [10, 7], "outside": [11, 7], "map": ["           ", " ######### ", " #..#TSSS# ", " #....#..# ", " #...#..S# ", " #F#.#...# ", " #.......# ", " ##..#...GO", " ######### ", "           "] };
-  rooms6.push({ id: "vor-dem-letzten-schritt", level: level5, ...createFractureRescueRules(level5, { "p": [7, 6], "boxes": [[4, 3], [6, 6], [3, 3], [6, 5]] }) });
-  solutions2.push("LLLUULLDDRRRRDRUUUDDLLLUULLUURDLDRLDDRRRRRUULDURRUULLLDLDLLUURDLDDDRRRRUURURULRDDDDDLULLLLLUUURRDDUULLDRURDLLDDRRRRRLLLLLUURRDULLDDRRRRDRRUUDDLLURURUDLDDRULUURUDLDDRULUUDDDLLLLLUDRRRRRRDRR");
-  introductions2.push("Ein morsches Feld tr\xE4gt Nurbi nur einmal. Bereite die oberen Steinpl\xE4tze vor und finde danach den sicheren gemeinsamen Weg hinaus.");
-}
-
-// outputs/nurbis-dungeons/src/comparison-collection.js
 var rooms7 = [];
 var solutions3 = [];
 var introductions3 = [];
 {
+  const level5 = { "title": "Der geliehene Stellplatz", "desc": "Vier Steine brauchen dieselben schmalen Arbeitswege. Belege die Druckplatten so, dass auch der Gartenfreund zum Ausgang gelangt.", "tags": ["Rangierfl\xE4che", "Vier Steine"], "hint": "Auch ein bereits belegtes Ziel kann vor\xFCbergehend als Arbeitsfl\xE4che gebraucht werden.", "wall": 2, "floor": 1, "seed": 298800, "collection": true, "sunken": true, "rescue": true, "friend": [3, 5], "exit": [10, 6], "outside": [11, 6], "map": ["           ", " ######### ", " #...#...# ", " #.......# ", " ###.##.## ", " #.F.#S.S# ", " ##..S...GO", " #S.....## ", " ######### ", "           "] };
+  rooms7.push({ id: "geliehener-stellplatz", level: level5, ...createRescueRules(level5, { "p": [6, 5], "boxes": [[7, 6], [7, 4], [5, 3], [7, 5]] }) });
+  solutions3.push("DLLUUURRURRDLLLLULLDRURDDDLDRDRRUURUDLDDRUUDDLLLUUUURRURRDLLLLDDDDRRUURUDDDLLLUUUURRURRDLLRDDDDLLLUUUUULLDRURDDDLDDRRRUURUULLLULLDRURDRRRDDDDLLLLUURDRDRRUUUULLLDDLDRUUURRRDDDDLLLLRRRUDLLUULRDDRRURRRR");
+  introductions3.push("Vier Steine brauchen dieselben schmalen Arbeitswege. Belege die Druckplatten so, dass auch der Gartenfreund zum Ausgang gelangt.");
+}
+{
+  const level5 = { "title": "Die letzte Schalterseite", "desc": "Die Wippe wechselt zwei Durchg\xE4nge. Behalte Zugang zu ihrem tiefen Ende, w\xE4hrend du die Steine an ihre Pl\xE4tze bringst.", "tags": ["Schalterseiten", "Wechselgitter"], "hint": "\xDCberlege vor dem endg\xFCltigen Abstellen jedes Steins, von wo du die Wippe noch erreichen und \xFCberqueren kannst.", "wall": 2, "floor": 1, "seed": 298973, "collection": true, "sunken": true, "rescue": true, "switchRescue": true, "combined": true, "lever": true, "connections": [[[7, 7], [2, 7], [2, 3]], [[7, 7], [7, 4]]], "friend": [3, 5], "exit": [10, 5], "outside": [11, 5], "map": ["           ", " ######### ", " #.S...### ", " #G......# ", " ###..#E## ", " #.F.....DO", " ##..#.SS# ", " #..#..AS# ", " ######### ", "           "] };
+  rooms7.push({ id: "letzte-schalterseite", level: level5, ...createSwitchRescueRules(level5, { "p": [4, 6], "boxes": [[4, 2], [5, 4], [6, 5], [4, 5]] }) });
+  solutions3.push("URUDRDRRULUULULLDRDDRDDRRULLULUULLLURRDRDDRDRRULRDDLLURUUULLLRDDRLUURRDDLDDRRUULLLUULULLDRRRDDRRRDDLLUURUULULDLLURDRRRDDLLLUDRRRUULLLDDRRDDRRUULLLLUUULLDRRRLDDRRRRDDLLURURDULLLLUURDLDRRDRRULUULULLDDRDRLULUURRDRDDLDRUUULULDDLDRRLUURRDDLLLLRRRRRRR");
+  introductions3.push("Die Wippe wechselt zwei Durchg\xE4nge. Behalte Zugang zu ihrem tiefen Ende, w\xE4hrend du die Steine an ihre Pl\xE4tze bringst.");
+}
+{
+  const level5 = { "title": "Vor dem letzten Schritt", "desc": "Ein morsches Feld tr\xE4gt Nurbi nur einmal. Bereite die oberen Steinpl\xE4tze vor und finde danach den sicheren gemeinsamen Weg hinaus.", "tags": ["Vorbereiten", "Morsche Bretter"], "hint": "Was du nach dem Einbrechen noch verschieben musst, braucht erreichbare Standfl\xE4chen auf festem Boden.", "wall": 2, "floor": 1, "seed": 299146, "collection": true, "sunken": true, "rescue": true, "weight": true, "fragileWalk": true, "friend": [2, 5], "exit": [10, 7], "outside": [11, 7], "map": ["           ", " ######### ", " #..#TSSS# ", " #....#..# ", " #...#..S# ", " #F#.#...# ", " #.......# ", " ##..#...GO", " ######### ", "           "] };
+  rooms7.push({ id: "vor-dem-letzten-schritt", level: level5, ...createFractureRescueRules(level5, { "p": [7, 6], "boxes": [[4, 3], [6, 6], [3, 3], [6, 5]] }) });
+  solutions3.push("LLLUULLDDRRRRDRUUUDDLLLUULLUURDLDRLDDRRRRRUULDURRUULLLDLDLLUURDLDDDRRRRUURURULRDDDDDLULLLLLUUURRDDUULLDRURDLLDDRRRRRLLLLLUURRDULLDDRRRRDRRUUDDLLURURUDLDDRULUURUDLDDRULUUDDDLLLLLUDRRRRRRDRR");
+  introductions3.push("Ein morsches Feld tr\xE4gt Nurbi nur einmal. Bereite die oberen Steinpl\xE4tze vor und finde danach den sicheren gemeinsamen Weg hinaus.");
+}
+
+// outputs/nurbis-dungeons/src/comparison-collection.js
+var rooms8 = [];
+var solutions4 = [];
+var introductions4 = [];
+{
   const level5 = { "difficulty": "leicht", "title": "Ein Platz auf Zeit", "desc": "Zwei Steine teilen sich einen kleinen Raum. Finde den Freund und halte beide Druckplatten f\xFCr den Ausgang belegt.", "tags": ["Leicht \xB7 Vergleichsreihe", "Zwei Steine"], "hint": "Ein Stein am Ziel kann noch im Weg sein. Behalte die Standfl\xE4che f\xFCr den anderen im Blick.", "wall": 2, "floor": 1, "seed": 298800, "collection": true, "sunken": true, "rescue": true, "friend": [4, 6], "exit": [8, 6], "outside": [9, 6], "map": ["           ", " ######### ", " ##...#### ", " ##..#.### ", " #.S...### ", " ##...S### ", " #..F..GO  ", " ######### ", " ######### ", "           "] };
-  rooms7.push({ id: "vergleich-ein-platz-auf-zeit", level: level5, ...createRescueRules(level5, { "p": [3, 2], "boxes": [[3, 3], [5, 4]] }) });
-  solutions3.push("DDRDRRULDLULUURDDRDDLLURRDLRRRR");
-  introductions3.push("Leicht \xB7 Vergleichsreihe: Zwei Steine teilen sich einen kleinen Raum. Finde den Freund und halte beide Druckplatten f\xFCr den Ausgang belegt.");
+  rooms8.push({ id: "vergleich-ein-platz-auf-zeit", level: level5, ...createRescueRules(level5, { "p": [3, 2], "boxes": [[3, 3], [5, 4]] }) });
+  solutions4.push("DDRDRRULDLULUURDDRDDLLURRDLRRRR");
+  introductions4.push("Leicht \xB7 Vergleichsreihe: Zwei Steine teilen sich einen kleinen Raum. Finde den Freund und halte beide Druckplatten f\xFCr den Ausgang belegt.");
 }
 {
   const level5 = { "difficulty": "mittel", "title": "Die schmale Runde", "desc": "Drei Steine m\xFCssen durch schmale Verbindungen. Bereite ihre Reihenfolge vor und \xF6ffne den gemeinsamen Ausgang.", "tags": ["Mittel \xB7 Vergleichsreihe", "Drei Steine"], "hint": "Plane, von welcher Seite du jeden Stein als N\xE4chstes schieben musst.", "wall": 2, "floor": 1, "seed": 298973, "collection": true, "sunken": true, "rescue": true, "friend": [4, 4], "exit": [9, 7], "outside": [10, 7], "map": ["           ", " ######### ", " ##..##.## ", " #....SS## ", " ##.F#..## ", " #..#...## ", " #.....S## ", " #...#..GO ", " ######### ", "           "] };
-  rooms7.push({ id: "vergleich-die-schmale-runde", level: level5, ...createRescueRules(level5, { "p": [5, 3], "boxes": [[3, 5], [4, 6], [4, 3]] }) });
-  solutions3.push("RDDDLLDLLURRRURRDDLUURUULLLDLDLDRRRURRDDLULURDRUUDLUDDLLLUURUULDDDLDRRRRLLLUURLDDRRRDRRR");
-  introductions3.push("Mittel \xB7 Vergleichsreihe: Drei Steine m\xFCssen durch schmale Verbindungen. Bereite ihre Reihenfolge vor und \xF6ffne den gemeinsamen Ausgang.");
+  rooms8.push({ id: "vergleich-die-schmale-runde", level: level5, ...createRescueRules(level5, { "p": [5, 3], "boxes": [[3, 5], [4, 6], [4, 3]] }) });
+  solutions4.push("RDDDLLDLLURRRURRDDLUURUULLLDLDLDRRRURRDDLULURDRUUDLUDDLLLUURUULDDDLDRRRRLLLUURLDDRRRDRRR");
+  introductions4.push("Mittel \xB7 Vergleichsreihe: Drei Steine m\xFCssen durch schmale Verbindungen. Bereite ihre Reihenfolge vor und \xF6ffne den gemeinsamen Ausgang.");
 }
 {
   const level5 = { "difficulty": "anspruchsvoll", "title": "Erst Platz schaffen", "desc": "Vier Steine teilen sich wenige Arbeitsfl\xE4chen. Plane Zwischenpl\xE4tze und Seitenwechsel, bevor du die Ziele endg\xFCltig belegst.", "tags": ["Anspruchsvoll \xB7 Vergleichsreihe", "Vier Steine"], "hint": "Der k\xFCrzeste Weg zum Ziel l\xE4sst nicht unbedingt genug Platz f\xFCr die anderen Steine.", "wall": 2, "floor": 1, "seed": 299146, "collection": true, "sunken": true, "rescue": true, "friend": [4, 6], "exit": [10, 7], "outside": [11, 7], "map": ["           ", " ######### ", " #.#.SS.## ", " #...#...# ", " #.......# ", " #..###.## ", " ##.F..S.# ", " #S......GO", " ######### ", "           "] };
-  rooms7.push({ id: "vergleich-erst-platz-schaffen", level: level5, ...createRescueRules(level5, { "p": [5, 4], "boxes": [[7, 7], [3, 5], [6, 4], [3, 4]] }) });
-  solutions3.push("LUURRRDDDDRDLLLLLURRRRUUUULLLDDRRLLULLDRDUURURRDDLLRRURRDLUULLLDLLDDRURUURRRDDDDDLLLLUULUURLDDRURRRLLLDDRRRRUURULULLLDURRRDDDDLLLLUURRRLLUURRRDDLLLLLURDRRRRUULLLDLDRRLUURRRDDDUUULLLDDRRURULDDLLLDDRRRDRRULUURULDLURDDDDLLURLLRRDRRRR");
-  introductions3.push("Anspruchsvoll \xB7 Vergleichsreihe: Vier Steine teilen sich wenige Arbeitsfl\xE4chen. Plane Zwischenpl\xE4tze und Seitenwechsel, bevor du die Ziele endg\xFCltig belegst.");
+  rooms8.push({ id: "vergleich-erst-platz-schaffen", level: level5, ...createRescueRules(level5, { "p": [5, 4], "boxes": [[7, 7], [3, 5], [6, 4], [3, 4]] }) });
+  solutions4.push("LUURRRDDDDRDLLLLLURRRRUUUULLLDDRRLLULLDRDUURURRDDLLRRURRDLUULLLDLLDDRURUURRRDDDDDLLLLUULUURLDDRURRRLLLDDRRRRUURULULLLDURRRDDDDLLLLUURRRLLUURRRDDLLLLLURDRRRRUULLLDLDRRLUURRRDDDUUULLLDDRRURULDDLLLDDRRRDRRULUURULDLURDDDDLLURLLRRDRRRR");
+  introductions4.push("Anspruchsvoll \xB7 Vergleichsreihe: Vier Steine teilen sich wenige Arbeitsfl\xE4chen. Plane Zwischenpl\xE4tze und Seitenwechsel, bevor du die Ziele endg\xFCltig belegst.");
 }
 
 // outputs/nurbis-dungeons/src/round-data.js
-var rooms8 = [rooms2[0], rooms3[0], rooms4[0], rooms5[0], ...rooms6, ...rooms7, ...rooms];
-var solutions4 = [solution, solution2, solution3, solution4, ...solutions2, ...solutions3, ...solutions];
-var introductions4 = [
+var rooms9 = [rooms3[0], rooms4[0], rooms5[0], rooms6[0], ...rooms7, ...rooms8, ...rooms2, ...rooms];
+var solutions5 = [solution, solution2, solution3, solution4, ...solutions3, ...solutions4, ...solutions2, ...solutions];
+var introductions5 = [
   "Vier Steine teilen sich enge Wege. Erreiche den Gartenfreund und \xF6ffne euren Ausgang.",
   "Die Wippe \xF6ffnet zwei Durchg\xE4nge abwechselnd. Plane Steintransport und Schalterseite zusammen.",
   "Die Bretter tragen Nurbi einmal. Beim Verlassen bricht die ben\xF6tigte Standfl\xE4che weg.",
   "Leere Becken sind nutzbare Wege. Die Wippe tauscht das Wasser zwischen ihnen.",
-  ...introductions2,
   ...introductions3,
+  ...introductions4,
+  ...introductions2,
   ...introductions
 ];
 
 // outputs/nurbis-dungeons/src/round-state.js
 var directions = { U: [0, -1], R: [1, 0], D: [0, 1], L: [-1, 0] };
 var signature = (s) => JSON.stringify([s.p, s.boxes, s.off ?? false, s.opened ?? false, s.rescued, s.won, s.rockerEntry ?? null]);
-var solutionStates = rooms8.map((room, i) => {
+var solutionStates = rooms9.map((room, i) => {
   const states = [room.initial()];
-  for (const letter of solutions4[i]) {
+  for (const letter of solutions5[i]) {
     const next = room.act(states.at(-1), directions[letter]).state;
     if (!next) throw Error("Ung\xFCltige Testl\xF6sung in " + room.id);
     states.push(next);
@@ -544,9 +586,9 @@ var solutionStates = rooms8.map((room, i) => {
   return states;
 });
 function createRound(saved) {
-  let index = 0, slots = rooms8.map((r) => ({ state: r.initial(), history: [], solved: false }));
+  let index = 0, slots = rooms9.map((r) => ({ state: r.initial(), history: [], solved: false }));
   if (saved?.version === 1 && Array.isArray(saved.ids) && Array.isArray(saved.slots) && saved.ids.length === saved.slots.length) {
-    rooms8.forEach((room, i) => {
+    rooms9.forEach((room, i) => {
       const old = saved.ids.indexOf(room.id), slot = saved.slots[old];
       if (slot && Array.isArray(slot.history) && Number.isInteger(slot.state?.moves) && Array.isArray(slot.state?.p) && Array.isArray(slot.state?.boxes)) {
         slots[i] = structuredClone(slot);
@@ -561,7 +603,7 @@ function createRound(saved) {
         }
       }
     });
-    const selected = rooms8.findIndex((room) => room.id === saved.ids[saved.index]);
+    const selected = rooms9.findIndex((room) => room.id === saved.ids[saved.index]);
     if (selected >= 0) index = selected;
   }
   return {
@@ -575,16 +617,16 @@ function createRound(saved) {
       return slots[index];
     },
     get room() {
-      return rooms8[index];
+      return rooms9[index];
     },
     get completed() {
       return slots.filter((s) => s.solved).length;
     },
     select(i) {
-      if (Number.isInteger(i) && i >= 0 && i < rooms8.length) index = i;
+      if (Number.isInteger(i) && i >= 0 && i < rooms9.length) index = i;
     },
     act(d) {
-      const slot = slots[index], result = rooms8[index].act(slot.state, d);
+      const slot = slots[index], result = rooms9[index].act(slot.state, d);
       if (result.state) {
         slot.history.push(slot.state);
         slot.state = result.state;
@@ -599,10 +641,10 @@ function createRound(saved) {
       return true;
     },
     reset() {
-      slots[index] = { state: rooms8[index].initial(), history: [], solved: slots[index].solved };
+      slots[index] = { state: rooms9[index].initial(), history: [], solved: slots[index].solved };
     },
     next() {
-      if (!slots[index].state.won || index === rooms8.length - 1) return false;
+      if (!slots[index].state.won || index === rooms9.length - 1) return false;
       index++;
       return true;
     },
@@ -611,7 +653,7 @@ function createRound(saved) {
       return solutionStates[index][at] && signature(solutionStates[index][at]) === signature(state) ? at : -1;
     },
     export() {
-      return { version: 1, rockerRuleVersion: 2, ids: rooms8.map((r) => r.id), index, slots: structuredClone(slots) };
+      return { version: 1, rockerRuleVersion: 2, ids: rooms9.map((r) => r.id), index, slots: structuredClone(slots) };
     }
   };
 }

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "katalog2-mediumA",
+    "title": "Ein Ziel muss warten",
+    "moves": 87,
+    "pushes": 24,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": null,
+    "friend": [
+      3,
+      5
+    ],
+    "exit": [
+      9,
+      7
+    ],
+    "solution": "DDRRUDLLUURRRURDDDRDDLLURDRUUDDLLLUUUDLLUURRDDDDLLUUUDRRUURURDDDRDDLLURDRULLLULRDRRRDRR"
+  },
+  {
+    "id": "katalog2-mediumB",
+    "title": "Die andere Seite",
+    "moves": 57,
+    "pushes": 19,
+    "toggles": 0,
+    "goalVacates": 2,
+    "collapseStep": null,
+    "friend": [
+      5,
+      5
+    ],
+    "exit": [
+      9,
+      7
+    ],
+    "solution": "RRDRRULLLRRDDRDLLUUURUURDDLLLULLDRRRDRURUULDDDDRULLRRDDRR"
+  },
+  {
+    "id": "katalog2-hard1",
+    "title": "Vier Wege, wenig Platz",
+    "moves": 103,
+    "pushes": 34,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": null,
+    "friend": [
+      4,
+      4
+    ],
+    "exit": [
+      10,
+      5
+    ],
+    "solution": "LLLULUURRLLDDRUDDDLUURURUULDDDLDRRRDRRUULDRDLULLLUUURRRURRDLLLLULDDDLDRUUULDRDDRRRURDLLLLUURLDDRRRURRRR"
+  },
+  {
+    "id": "katalog2-hard2",
+    "title": "Noch nicht am Ziel",
+    "moves": 200,
+    "pushes": 32,
+    "toggles": 0,
+    "goalVacates": 5,
+    "collapseStep": null,
+    "friend": [
+      4,
+      5
+    ],
+    "exit": [
+      10,
+      6
+    ],
+    "solution": "DDLULLLUURRRDRDLUULLLDDLDDRDRRRRUULUURRULLDDDRDDLLLLULUURRDRLULLDDRDRRRRUUUDDDLLLLULUURRDRRUUURRDLDLDLLULLDDRDRRRRUULULLRRDRDDLLLLULUUURURRRDRDLUULLLDLDDDRDRRRRUULLLULULDURURRRDRRULLDDDRUUDDLLLRRRRDRR"
+  },
+  {
+    "id": "katalog2-switch",
+    "title": "Erst hin, dann zurück",
+    "moves": 157,
+    "pushes": 32,
+    "toggles": 4,
+    "goalVacates": 1,
+    "collapseStep": null,
+    "friend": [
+      4,
+      5
+    ],
+    "exit": [
+      10,
+      7
+    ],
+    "solution": "DLLUUUULLLULDDURRRRDDDDRRULDLUULLDRRUUDDDRRULDLULUUUURRRDLLULDLLLDDDRRRRLULUURDURRRULLDDLLDDRRUUDDDRRULDLULLUUURURRRDLLLLLRRRRRULLDDLLDDRRUULURRLDLLDDRRRRDRR"
+  },
+  {
+    "id": "katalog2-boards",
+    "title": "Bevor der Boden fehlt",
+    "moves": 193,
+    "pushes": 32,
+    "toggles": 0,
+    "goalVacates": 1,
+    "collapseStep": 138,
+    "friend": [
+      4,
+      5
+    ],
+    "exit": [
+      10,
+      7
+    ],
+    "solution": "RRURRDRDLUULLDLLDDRDRRRUDLLLULUURRURRDLLLLDDRDRRRUURULLLRRDDDLLLULUUULDDRDRDRRRUUULLLRRRDDDLLLULULUURDDURRRRDDDLLLLLUDRRRRRUUULLLLDDUURRDRULLLDDRDRRRUURULLLLRRRDDDLLLULUUDDLDRRRLULUURRRRDDDRDRR"
+  }
+]

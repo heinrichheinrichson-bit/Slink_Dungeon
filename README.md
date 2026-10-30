@@ -1,6 +1,6 @@
 # Nurbi’s Dungeons
 
-Playable dungeon puzzle prototype in the world of Nurbi’s Garden. Current collection: **24 puzzles**, touch controls, undo, step-by-step tester solutions, water, switches, gates and fragile floors. All three button material variants are retained.
+Playable dungeon puzzle prototype in the world of Nurbi’s Garden. Current collection: **30 puzzles**, touch controls, undo, step-by-step tester solutions, water, switches, gates and fragile floors. All three button material variants are retained.
 
 ## Run
 
@@ -28,3 +28,5 @@ Some historical work/ scripts use absolute paths to the original local tool inst
 Every completed version or change is committed and pushed with a unique snapshot-YYYYMMDDHHMMSS tag (Europe/Vienna). This preserves all older versions without a timed scheduler. Run node scripts/backup.cjs "Description of completed version" after checks and diff review. Confirmed pushes are required before reporting a completed GitHub backup. See AGENTS.md.
 
 The original APK is signed with the local Android debug key. That private key is not stored here. Future APK updates need the same key to retain install compatibility.
+
+Latest catalogue extension: outputs/nurbis-dungeons/KATALOG-ERWEITERUNG-30.md (rooms 25–30). APK 0.1.3 remains the previous 24-room build.
